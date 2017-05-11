@@ -1,0 +1,3 @@
+rootProject.name = 'ChanghuaLandsOffice'
+
+include ':app'

@@ -24,7 +24,7 @@ export default class index extends Component {
     render() {
         return (
             <View style={ styles.container }>
-              <Image style={ { width: width, marginTop: 20, marginBottom: 20 } } source={ require('./image/logo.png') } />
+              <Image style={ { width: width - 10, marginTop: 20, marginBottom: 20 } } source={ require('./image/logo.png') } />
               <View style={ styles.containers }>
                 <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 75, left: 10 }] } ButtonsName='公告專區' onPress={ this._NavigationBtn.bind(this, 'Proclamation') } />
                 <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 0, right: 5 }] } ButtonsName='查詢專區' onPress={ this._NavigationBtn.bind(this, 'QueryArea') } />
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: height,
         width: width,
-        backgroundColor: '#00ff00'
+        backgroundColor: '#00ff'
     },
     containers: {
         flexDirection: "row",

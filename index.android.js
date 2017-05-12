@@ -9,14 +9,11 @@ import { AppRegistry } from 'react-native';
 
 import Steup from './app/Steup'
 import codePush from 'react-native-code-push'
-let codePushOptions = {
-  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME
-};
 
 export default class ChanghuaLandsOffice extends Component {
   componentDidMount() {
     codePush.sync({
-      updateDialog: true,
+      updateDialog: false,
       installMode: codePush.InstallMode.IMMEDIATE
     });
   }

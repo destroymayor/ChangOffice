@@ -7,8 +7,7 @@ const Steup = StackNavigator({
     index: {
         screen: index,
         navigationOptions: {
-            title: "主頁",
-            headerTintColor: '#2894ff'
+            header: null
         }
     },
     Introduction: {
@@ -25,6 +24,20 @@ const Steup = StackNavigator({
             headerTintColor: '#2894ff'
         }
     },
+    QueryArea: {
+        screen: page.QueryArea,
+        navigationOptions: {
+            title: "查詢專區",
+            headerTintColor: '#2894ff'
+        }
+    },
+    Downloads: {
+        screen: page.Downloads,
+        navigationOptions: {
+            title: "下載專區",
+            headerTintColor: '#2894ff'
+        }
+    },
     TrialCalculation: {
         screen: page.TrialCalculation,
         navigationOptions: {
@@ -36,6 +49,13 @@ const Steup = StackNavigator({
         screen: page.OnlineApplication,
         navigationOptions: {
             title: "線上申辦",
+            headerTintColor: '#2894ff'
+        }
+    },
+    FileApplication: {
+        screen: page.FileApplication,
+        navigationOptions: {
+            title: "檔案應用",
             headerTintColor: '#2894ff'
         }
     },

@@ -1,3 +1,4 @@
 <resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">KmHcxi6gd0NreSaY7prg08dapYtzEJuOM601Q</string>
     <string name="app_name">ChanghuaLandsOffice</string>
 </resources>

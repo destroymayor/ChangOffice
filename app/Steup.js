@@ -1,4 +1,6 @@
-import {StackNavigator} from "react-navigation"
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import { StackNavigator } from "react-navigation"
 
 import index from './index'
 import page from './page/PageExports'
@@ -75,4 +77,4 @@ const Steup = StackNavigator({
     }
 });
 
-export default Steup;
+export default Steup

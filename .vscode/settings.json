@@ -19,7 +19,7 @@
         "*.js": "javascriptreact"
     },
     "vsicons.projectDetection.autoReload": true,
-    "react.beautify.formatter": "prettydiff",
+    "react.beautify.formatter": "esformatter",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
     "editor.dragAndDrop": true,

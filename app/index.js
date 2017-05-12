@@ -5,25 +5,14 @@
  */
 
 //主頁
-import React, {Component} from 'react';
-import {
-    Dimensions,
-    Image,
-    StyleSheet,
-    ScrollView,
-    Text,
-    View
-} from 'react-native';
+import React, { Component } from 'react';
+import { Dimensions, Image, StyleSheet, ScrollView, Text, View } from 'react-native';
 
 import Btn from './utils/Button'
 import EntypoIcon from 'react-native-vector-icons/Entypo'
 
-const width = Dimensions
-    .get('window')
-    .width;
-const height = Dimensions
-    .get('window')
-    .height
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height
 
 export default class index extends Component {
 
@@ -34,132 +23,25 @@ export default class index extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Image
-                    style={{
-                    width: width,
-                    marginTop: 20,
-                    marginBottom: 20
-                }}
-                    source={require('./image/logo.png')}/>
-                <View style={styles.containers}>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginTop: 10,
-                            position: 'relative',
-                            top: 75,
-                            left: 10
-                        }
-                    ]}
-                        ButtonsName='公告專區'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'Proclamation')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginTop: 10,
-                            position: 'relative',
-                            top: 0,
-                            right: 5
-                        }
-                    ]}
-                        ButtonsName='查詢專區'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'QueryArea')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginTop: 10,
-                            position: 'relative',
-                            top: 0,
-                            left: 5
-                        }
-                    ]}
-                        ButtonsName='下載專區'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'Downloads')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginTop: 10,
-                            position: 'relative',
-                            top: 75,
-                            right: 10
-                        }
-                    ]}
-                        ButtonsName='試算專區'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'TrialCalculation')}/>
-                </View>
-                <View style={styles.containers}>
-                    <Btn
-                        styless={styles.mainbutton}
-                        ButtonsName='本所簡介'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'Introduction')}/>
-                </View>
-                <View style={styles.containers}>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginBottom: 10,
-                            position: 'relative',
-                            bottom: 50,
-                            left: 10
-                        }
-                    ]}
-                        ButtonsName='線上申辦'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'OnlineApplication')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginBottom: 10,
-                            position: 'relative',
-                            top: 5,
-                            right: 5
-                        }
-                    ]}
-                        ButtonsName='檔案應用'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'FileApplication')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginBottom: 10,
-                            position: 'relative',
-                            top: 5,
-                            left: 5
-                        }
-                    ]}
-                        ButtonsName='實價登錄'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'PricingLogin')}/>
-                    <Btn
-                        styless={[
-                        styles.button, {
-                            marginBottom: 10,
-                            position: 'relative',
-                            bottom: 50,
-                            right: 10
-                        }
-                    ]}
-                        ButtonsName='相關連結'
-                        onPress={this
-                        ._NavigationBtn
-                        .bind(this, 'Relatedlink')}/>
-                </View>
+            <View style={ styles.container }>
+              <Image style={ { width: width, marginTop: 20, marginBottom: 20 } } source={ require('./image/logo.png') } />
+              <View style={ styles.containers }>
+                <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 75, left: 10 }] } ButtonsName='公告專區' onPress={ this._NavigationBtn.bind(this, 'Proclamation') } />
+                <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 0, right: 5 }] } ButtonsName='查詢專區' onPress={ this._NavigationBtn.bind(this, 'QueryArea') } />
+                <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 0, left: 5 }] } ButtonsName='下載專區' onPress={ this._NavigationBtn.bind(this, 'Downloads') } />
+                <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 75, right: 10 }] } ButtonsName='試算專區' onPress={ this._NavigationBtn.bind(this, 'TrialCalculation') } />
+              </View>
+              <View style={ styles.containers }>
+                <Btn styless={ styles.mainbutton } ButtonsName='本所簡介' onPress={ this._NavigationBtn.bind(this, 'Introduction') } />
+              </View>
+              <View style={ styles.containers }>
+                <Btn styless={ [styles.button, { marginBottom: 10, position: 'relative', bottom: 50, left: 10 }] } ButtonsName='線上申辦' onPress={ this._NavigationBtn.bind(this, 'OnlineApplication') } />
+                <Btn styless={ [styles.button, { marginBottom: 10, position: 'relative', top: 5, right: 5 }] } ButtonsName='檔案應用' onPress={ this._NavigationBtn.bind(this, 'FileApplication') } />
+                <Btn styless={ [styles.button, { marginBottom: 10, position: 'relative', top: 5, left: 5 }] } ButtonsName='實價登錄' onPress={ this._NavigationBtn.bind(this, 'PricingLogin') } />
+                <Btn styless={ [styles.button, { marginBottom: 10, position: 'relative', bottom: 50, right: 10 }] } ButtonsName='相關連結' onPress={ this._NavigationBtn.bind(this, 'Relatedlink') } />
+              </View>
             </View>
-        );
+            );
     }
 }
 
@@ -167,7 +49,8 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         height: height,
-        width: width
+        width: width,
+        backgroundColor: '#00ff00'
     },
     containers: {
         flexDirection: "row",

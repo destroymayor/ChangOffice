@@ -4,14 +4,14 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {AppRegistry} from 'react-native';
+import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
 
 import Steup from './app/Steup'
 
 export default class ChanghuaLandsOffice extends Component {
   render() {
-    return (<Steup onNavigationStateChange={null}/>);
+    return (<Steup onNavigationStateChange={ null } />);
   }
 }
 

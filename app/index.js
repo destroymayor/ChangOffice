@@ -9,10 +9,8 @@ import React, { Component } from 'react';
 import { Dimensions, Image, StyleSheet, ScrollView, Text, View } from 'react-native';
 
 import Btn from './utils/Button'
+import screen from './Style/screen'
 import EntypoIcon from 'react-native-vector-icons/Entypo'
-
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height
 
 export default class index extends Component {
 
@@ -24,7 +22,7 @@ export default class index extends Component {
     render() {
         return (
             <View style={ styles.container }>
-              <Image style={ { width: width - 10, marginTop: 20, marginBottom: 20 } } source={ require('./image/logo.png') } />
+              <Image style={ { width: screen.width - 10, marginTop: 20, marginBottom: 20 } } source={ require('./image/logo.png') } />
               <View style={ styles.containers }>
                 <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 75, left: 10 }] } ButtonsName='公告專區' onPress={ this._NavigationBtn.bind(this, 'Proclamation') } />
                 <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 0, right: 5 }] } ButtonsName='查詢專區' onPress={ this._NavigationBtn.bind(this, 'QueryArea') } />
@@ -48,9 +46,9 @@ export default class index extends Component {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        height: height,
-        width: width,
-        backgroundColor: '#00ff'
+        height: screen.height,
+        width: screen.width,
+        backgroundColor: '#ff0'
     },
     containers: {
         flexDirection: "row",

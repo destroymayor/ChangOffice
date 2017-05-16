@@ -241,9 +241,6 @@ const Steup = StackNavigator({
     WebPage: {
         screen: WebPage
     }
-},
-    {
-        headerMode: 'float'
-    });
+});
 
 export default Steup

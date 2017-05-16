@@ -26,7 +26,7 @@ export default class WebViewPage extends Component {
         console.log(params.PageUrl)
         return (
             <View style={ styles.container }>
-              <WebView enderLoagin={ this.renderLoagin } style={ { width: (screen.width) } } source={ { uri: params.PageUrl } } automaticallyAdjustContentInsets={ false } domStorageEnabled={ true }
+              <WebView enderLoagin={ this.renderLoagin } style={ { width: (screen.width - 10) } } source={ { uri: params.PageUrl } } automaticallyAdjustContentInsets={ false } domStorageEnabled={ true }
                 javaScriptEnabled={ true } startInLoadingState={ true } scalesPageToFit={ true } />
             </View>
             );

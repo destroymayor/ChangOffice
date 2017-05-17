@@ -30,7 +30,7 @@ export default class index extends Component {
                 <Btn styless={ [styles.button, { marginTop: 10, position: 'relative', top: 75, right: 10 }] } ButtonsName='試算專區' onPress={ this._NavigationBtn.bind(this, 'TrialCalculation') } />
               </View>
               <View style={ styles.containers }>
-                <Btn styless={ [styles.mainbutton, { backgroundColor: '#ff00ff' }] } ButtonsName='本所簡介' onPress={ this._NavigationBtn.bind(this, 'Introduction') } />
+                <Btn styless={ styles.mainbutton } ButtonsName='本所簡介' onPress={ this._NavigationBtn.bind(this, 'Introduction') } />
               </View>
               <View style={ styles.containers }>
                 <Btn styless={ [styles.button, { marginBottom: 10, position: 'relative', bottom: 50, left: 10 }] } ButtonsName='線上申辦' onPress={ this._NavigationBtn.bind(this, 'OnlineApplication') } />

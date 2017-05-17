@@ -6,7 +6,7 @@
 
 //查詢專區
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, Linking, Text, View } from 'react-native';
 
 import Btn from '../../utils/Button'
 
@@ -35,8 +35,10 @@ export default class QueryArea extends Component {
                 <View style={ { flex: 1, width: '50%' } }>
                   <Btn styless={ styles.button } ButtonsName='申報地價' onPress={ this._NavigationBtn.bind(this, 'WebPage', '申報地價', 'url') } />
                   <Btn styless={ styles.button } ButtonsName='彰化縣門牌' onPress={ this._NavigationBtn.bind(this, 'WebPage', '彰化縣門牌', 'http://address.chcg.gov.tw/chcgCul/Culture/Default.aspx') } />
-                  <Btn styless={ styles.button } ButtonsName={ `都市土地${'\n'}使用分區` } onPress={ this._NavigationBtn.bind(this, 'WebPage', '都市土地使用分區', 'url') } />
-                  <Btn styless={ styles.button } ButtonsName={ `都外土地${'\n'}使用編定` } onPress={ this._NavigationBtn.bind(this, 'WebPage', '都外土地使用編定', 'url') } />
+                  <Btn styless={ styles.button } ButtonsName={ `都市土地${'\n'}使用分區` } onPress={ this._NavigationBtn.bind(this, 'WebPage', '都市土地使用分區', 'http://luz.tcd.gov.tw/WEB/') } />
+                  <Btn styless={ styles.button } ButtonsName={ `都外土地${'\n'}使用編定` } onPress={ () => {
+                                                                                                 Linking.openURL('https://www.land.moi.gov.tw/pda/content.asp?cid=87&mcid=70')
+                                                                                             } } />
                   <Btn styless={ styles.button } ButtonsName='不動產交易資訊' onPress={ this._NavigationBtn.bind(this, 'WebPage', '不動產交易資訊', 'http://pri.land.moi.gov.tw/realestate_query/') } />
                   <Btn styless={ styles.button } ButtonsName={ `地籍圖資${'\n'}便民系統` } onPress={ this._NavigationBtn.bind(this, 'WebPage', '地籍圖資便民系統', 'http://easymap.land.moi.gov.tw/') } />
                   <Btn styless={ styles.button } ButtonsName={ `地籍位置${'\n'}導引系統` } onPress={ this._NavigationBtn.bind(this, 'WebPage', '地籍位置導引系統', 'http://navimap.land.moi.gov.tw/') } />

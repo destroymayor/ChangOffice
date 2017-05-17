@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     button: {
         margin: 10,
-        width: 180,
+        width: 130,
         height: 60
     },
 });

@@ -13,6 +13,7 @@ export default class LandFirstRegistration extends Component {
     render() {
         return (
             <View style={ styles.container }>
+              <Text>暫無資料</Text>
             </View>
             );
     }

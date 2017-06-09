@@ -29,14 +29,6 @@ export default class BooklikeSupply extends Component {
     render() {
         return (
             <View style={ styles.container }>
-            </View>
-            );
-    }
-
-
-    render() {
-        return (
-            <View style={ styles.container }>
               <ListView dataSource={ this.state.dataSource } pageSize={ 1 } initialListSize={ 1 } renderRow={ this.renderRow.bind(this) } />
             </View>
             );

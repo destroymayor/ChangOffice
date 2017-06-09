@@ -58,15 +58,7 @@ export default class QurArea extends Component {
         return (
             <View style={ styles.container }>
               <Text>本所轄區包括溪湖鎮、埔心鄉、埔鹽鄉三鄉鎮</Text>
-              <View style={ { width: '100%', flexDirection: 'row', justifyContent: 'space-around' } }>
-                <Text style={ { width: '20%' } }>鄉鎮別</Text>
-                <Text style={ { width: '20%' } }>段數</Text>
-                <Text style={ { width: '20%' } }>土地筆數</Text>
-                <Text style={ { width: '20%' } }>建物棟數</Text>
-                <Text style={ { width: '20%' } }>土地面積
-                  { '\n' }(公頃)</Text>
-              </View>
-              <ListView dataSource={ this.state.dataSource } renderRow={ this.renderRow.bind(this) } />
+              <ListView dataSource={ this.state.dataSource } pageSize={ 1 } initialListSize={ 1 } renderRow={ this.renderRow.bind(this) } />
               <Text>本表資料統計至104 年5 月31 日止</Text>
             </View>
             );
@@ -74,20 +66,25 @@ export default class QurArea extends Component {
 
     renderRow(msg) {
         return (
-            <View style={ { width: '100%', flexDirection: 'row', backgroundColor: '#ff0' } }>
-              <Text style={ { width: '20%' } }>
+            <View style={ { width: '100%', marginBottom: 10, backgroundColor: '#e0e0e0' } }>
+              <Text>
+                鄉鎮別:
                 { msg.Township }
               </Text>
-              <Text style={ { width: '20%' } }>
+              <Text>
+                段數:
                 { msg.NumberofSegments }
               </Text>
-              <Text style={ { width: '20%' } }>
+              <Text>
+                土地筆數:
                 { msg.NumberOfLand }
               </Text>
-              <Text style={ { width: '20%' } }>
+              <Text>
+                建物棟數:
                 { msg.BuildingTheNumber }
               </Text>
-              <Text style={ { width: '20%' } }>
+              <Text>
+                土地面積公頃:
                 { msg.LandArea }
               </Text>
             </View>
@@ -98,7 +95,7 @@ export default class QurArea extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#F5FCFF'
     }
 });

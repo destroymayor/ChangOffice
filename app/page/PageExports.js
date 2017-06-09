@@ -43,9 +43,15 @@ import OnlineApplication from './OnlineApplication/OnlineApplication'
 //-----------------------//
 //檔案應用
 import FileApplication from './FileApplication/FileApplication'
+import Applicationandexample from './FileApplication/Applicationandexample'
+import ArchivesApplicationNotes from './FileApplication/ArchivesApplicationNotes'
+import Charges from './FileApplication/Charges'
+import JobflowChart from './FileApplication/JobflowChart'
+
 //-----------------------//
 //實價登錄
 import PricingLogin from './PricingLogin/PricingLogin'
+import DeclarationBook from './PricingLogin/DeclarationBook'
 //-----------------------//
 //相關連結
 import Relatedlink from './Relatedlink/Relatedlinks'
@@ -71,6 +77,11 @@ export default {
     TrialCalculation: TrialCalculation,
     OnlineApplication: OnlineApplication,
     FileApplication: FileApplication,
+    Applicationandexample: Applicationandexample,
+    ArchivesApplicationNotes: ArchivesApplicationNotes,
+    Charges: Charges,
+    JobflowChart: JobflowChart,
     PricingLogin: PricingLogin,
+    DeclarationBook: DeclarationBook,
     Relatedlink: Relatedlink
 }

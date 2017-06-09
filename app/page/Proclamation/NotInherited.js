@@ -6,56 +6,46 @@
 
 //未辦繼承
 import React, { Component } from 'react';
-import { StyleSheet, Linking, ListView, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Linking, ListView, Text, View } from 'react-native';
 
 import NotInheritedData from '../../Data/NotInheritedData'
 
 export default class NotInherited extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            dataSource: new ListView.DataSource({
-                rowHasChanged: (row1, row2) => row1 !== row2
-            })
-        };
-    }
-
-    componentWillMount() {
-        this.setState({
-            dataSource: this.state.dataSource.cloneWithRows(NotInheritedData)
-        });
     }
 
     render() {
         return (
             <View style={ styles.container }>
-              <ListView dataSource={ this.state.dataSource } pageSize={ 1 } initialListSize={ 1 } renderRow={ this.renderRow.bind(this) } />
+              <FlatList data={ NotInheritedData } keyExtractor={ item => item.Line } initialScrollIndex={ 10 } initialNumToRender={ 10 } renderItem={ this.renderRow }
+              />
             </View>
             );
     }
 
-    renderRow(msg) {
+    renderRow({item}) {
         return (
             <View style={ { width: '100%', marginBottom: 10, backgroundColor: '#e0e0e0' } }>
               <Text>
                 項次:
-                { msg.Line }
+                { item.Line }
               </Text>
               <Text>
                 年度:
-                { msg.Year }
+                { item.Year }
               </Text>
               <Text>
                 收件案號:
                 <Text style={ { color: '#2894ff' } } onPress={ () => {
                                                                    Linking.openURL(msg.ReceiptNumberUrl)
                                                                } }>
-                  { msg.ReceiptNumber }
+                  { item.ReceiptNumber }
                 </Text>
               </Text>
               <Text>
                 被繼承人姓名:
-                { msg.TheNameOfTheSuccessor }
+                { item.TheNameOfTheSuccessor }
               </Text>
             </View>
             );

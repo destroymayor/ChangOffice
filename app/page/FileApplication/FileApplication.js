@@ -5,18 +5,22 @@
  */
 
 //檔案應用
-import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default class FileApplication extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    檔案應用
-                </Text>
+            <View style={ styles.container }>
+              <Text style={ styles.welcome }>
+                檔案線上申請 在app裡連結外部
+              </Text>
+              <Text>檔案應用閱覽須知 app</Text>
+              <Text>申請書及範例（中英日文版） app</Text>
+              <Text>作業流程圖 app</Text>
+              <Text>收費標準 app</Text>
             </View>
-        );
+            );
     }
 }
 

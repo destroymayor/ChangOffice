@@ -6,64 +6,55 @@
 
 //書狀補給
 import React, { Component } from 'react';
-import { StyleSheet, ListView, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import BooklikeSupplyData from '../../Data/BookikeSupplyData';
 
 export default class BooklikeSupply extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            dataSource: new ListView.DataSource({
-                rowHasChanged: (row1, row2) => row1 !== row2
-            })
-        };
-    }
 
-    componentWillMount() {
-        this.setState({
-            dataSource: this.state.dataSource.cloneWithRows(BooklikeSupplyData)
-        });
     }
 
     render() {
         return (
             <View style={ styles.container }>
-              <ListView dataSource={ this.state.dataSource } pageSize={ 1 } initialListSize={ 1 } renderRow={ this.renderRow.bind(this) } />
+              <FlatList data={ BooklikeSupplyData } keyExtractor={ item => item.Line } initialScrollIndex={ 10 } initialNumToRender={ 10 } renderItem={ this.renderRow }
+              />
             </View>
             );
     }
 
-    renderRow(msg) {
+    renderRow({item}) {
         return (
             <View style={ { width: '100%', marginBottom: 10, backgroundColor: '#e0e0e0' } }>
               <Text>
                 項次:
-                { msg.Line }
+                { item.Line }
               </Text>
               <Text>
                 年 字 號:
-                { msg.Year }
+                { item.Year }
               </Text>
               <Text>
                 權利人:
-                { msg.RightPerson }
+                { item.RightPerson }
               </Text>
               <Text>
                 公告期間:
-                { msg.DuringTheAnnouncementPeriod }
+                { item.DuringTheAnnouncementPeriod }
               </Text>
               <Text>
                 地段:
-                { msg.Lot }
+                { item.Lot }
               </Text>
               <Text>
                 地號建號:
-                { msg.LandmarkKeyNumber }
+                { item.LandmarkKeyNumber }
               </Text>
               <Text>
                 書狀號:
-                { msg.BookNumber }
+                { item.BookNumber }
               </Text>
             </View>
             );

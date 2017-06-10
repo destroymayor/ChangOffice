@@ -8,6 +8,8 @@
 import React, { Component } from 'react';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import screen from '../../Style/screen'
+
 export default class FloorPresentation extends Component {
 
     render() {
@@ -18,7 +20,7 @@ export default class FloorPresentation extends Component {
               <Text>三樓平面圖：三樓為測量課辦公室及總會議室，右側為倉庫及電腦室，左側有樓梯及廁所。</Text>
               <ScrollView style={ { flex: 1 } }>
                 <View style={ { justifyContent: 'center', alignItems: 'center', marginBottom: 10, marginTop: 10 } }>
-                  <Image style={ { width: '80%' } } source={ require('../../image/moreimg.png') } />
+                  <Image style={ { width: screen.width, height: screen.height } } source={ require('../../image/moreimg.png') } />
                 </View>
               </ScrollView>
             </View>

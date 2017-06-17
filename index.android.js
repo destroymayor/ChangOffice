@@ -4,25 +4,25 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+import React, { Component } from "react";
+import { AppRegistry } from "react-native";
 
-import Steup from './app/Steup'
-import codePush from 'react-native-code-push'
+import Steup from "./app/Steup";
+import codePush from "react-native-code-push";
 
 export default class ChanghuaLandsOffice extends Component {
-  componentDidMount() {
-    codePush.sync({
-      updateDialog: false,
-      installMode: codePush.InstallMode.IMMEDIATE
-    });
-  }
+  // componentDidMount() {
+  //   codePush.sync({
+  //     updateDialog: false,
+  //     installMode: codePush.InstallMode.IMMEDIATE
+  //   });
+  // }
   render() {
-    return (<Steup onNavigationStateChange={ null } />);
+    return <Steup onNavigationStateChange={null} />;
   }
 }
 
 // ChanghuaLandsOffice = codePush(codePushOptions)(ChanghuaLandsOffice);
 // ChanghuaLandsOffice = codePush(ChanghuaLandsOffice);
 
-AppRegistry.registerComponent('ChanghuaLandsOffice', () => ChanghuaLandsOffice);
+AppRegistry.registerComponent("ChanghuaLandsOffice", () => ChanghuaLandsOffice);

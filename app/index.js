@@ -22,7 +22,13 @@ import SplashScreen from "react-native-splash-screen";
 
 export default class index extends Component {
   componentDidMount() {
-       SplashScreen.hide();
+    this.timer = setTimeout(() => {
+      SplashScreen.hide();
+    }, 800);
+  }
+
+  componentWillUnmount() {
+    this.timer && clearTimeout(this.timer);
   }
 
   _NavigationBtn(page) {
@@ -33,10 +39,6 @@ export default class index extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={{ width: screen.width - 10, marginTop: 20, marginBottom: 20 }}
-          source={require("./image/logo.png")}
-        />
         <View style={styles.containers}>
           <Btn
             styless={[

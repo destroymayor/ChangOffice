@@ -26,7 +26,7 @@ const Steup = StackNavigator(
     //本所轄區
     QurArea: {
       screen: page.QurArea,
-      navigationOptions: { title: "本所轄區" }
+      navigationOptions: { title: "本所資訊" }
     },
     //位置交通
     LocationTraffic: {
@@ -52,6 +52,10 @@ const Steup = StackNavigator(
     FBandYoutube: {
       screen: page.FBandYoutube,
       navigationOptions: { title: "FB粉絲專頁及Youtube影音頻道" }
+    },
+    latestNews: {
+      screen: page.latestNews,
+      navigationOptions: { title: "最新消息" }
     },
     //--------------------------------------//
     //公告專區
@@ -82,7 +86,7 @@ const Steup = StackNavigator(
     //地籍清理等公告
     CadastralCleaning: {
       screen: page.CadastralCleaning,
-      navigationOptions: { title: "地籍清理等公告" }
+      navigationOptions: { title: "地籍清理" }
     },
     //--------------------------------------//
     //查詢專區

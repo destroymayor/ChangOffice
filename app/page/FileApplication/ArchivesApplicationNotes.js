@@ -5,16 +5,17 @@
  */
 
 //檔案應用閱覽須知
-import React, { Component } from 'react';
-import {ScrollView, StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default class ArchivesApplicationNotes extends Component {
-
-    render() {
-        return (
-            <ScrollView> 
-            <View style={styles.container}>
-               <Text>{`一、彰化縣溪湖地政事務所（以下簡稱本所）依據檔案法第17條至第21條、政府資訊公開法及行政程序法第46條及其他法令規定，為辦理有關民眾申請閱覽、抄錄或複製檔案之開放應用事項，爰訂定本須知。
+  render() {
+    return (
+      <ScrollView>
+        <View style={styles.container}>
+          <Text
+            style={{ fontSize: 23 }}
+          >{`一、彰化縣溪湖地政事務所（以下簡稱本所）依據檔案法第17條至第21條、政府資訊公開法及行政程序法第46條及其他法令規定，為辦理有關民眾申請閱覽、抄錄或複製檔案之開放應用事項，爰訂定本須知。
 
 二、申請閱覽、抄錄或複製本所檔案，應先填具申請書【如附件一】或以書面載明下列事項，以親自持送或郵寄通訊方式申請。
 
@@ -73,17 +74,17 @@ export default class ArchivesApplicationNotes extends Component {
   （二）複製檔案以影印機黑白複印或紙張黑白列印輸出者， B4（含）尺寸以下每張收費新臺幣2元，A3尺寸每張新臺幣3元。
 
   （三）如另需提供郵寄服務者，其郵遞費用以實支數額計算，本所並應開立收據交與申請人。`}</Text>
-            </View>
-            </ScrollView>
-            );
-    }
+        </View>
+      </ScrollView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF'
-    },
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
+  }
 });

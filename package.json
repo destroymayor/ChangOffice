@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@types/react-navigation": "^1.0.0",
+    "babel-plugin-transform-remove-console": "^6.8.4",
     "react": "16.0.0-alpha.06",
     "react-native": "0.44.3",
     "react-native-code-push": "^2.0.3-beta",

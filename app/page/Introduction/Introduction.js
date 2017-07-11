@@ -45,7 +45,7 @@ export default class Introduction extends Component {
               this,
               "WebPage",
               "聯絡我們",
-              "http://www.xh-land.gov.tw/chaspx/mail02.aspx?web=105"
+              "http://www.xh-land.gov.tw/chaspx/guestbook.aspx?web=104"
             )}
           />
           <Btn

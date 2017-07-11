@@ -64,7 +64,7 @@ export default class OnlineApplication extends Component {
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "內政部國土測繪中心圖資整合資料查詢申購",
+            "測繪圖資整合資料查詢申購",
             "http://eservice.nlsc.gov.tw/CaseApply/login.aspx"
           )}
         />

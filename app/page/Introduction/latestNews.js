@@ -1,16 +1,20 @@
 //最新消息
 import React, { Component } from "react";
-import { StyleSheet, ScrollView, Text, View } from "react-native";
+import { StyleSheet, Platform, Linking, ScrollView, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
 export default class latestNews extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {

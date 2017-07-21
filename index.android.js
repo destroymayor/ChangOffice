@@ -22,7 +22,4 @@ export default class ChanghuaLandsOffice extends Component {
   }
 }
 
-// ChanghuaLandsOffice = codePush(codePushOptions)(ChanghuaLandsOffice);
-// ChanghuaLandsOffice = codePush(ChanghuaLandsOffice);
-
 AppRegistry.registerComponent("ChanghuaLandsOffice", () => ChanghuaLandsOffice);

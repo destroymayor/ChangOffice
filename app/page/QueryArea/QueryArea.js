@@ -6,17 +6,21 @@
 
 //查詢專區
 import React, { Component } from "react";
-import { StyleSheet, ScrollView, Linking, Text, View } from "react-native";
+import { StyleSheet, ScrollView, Platform, Linking, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
 export default class QueryArea extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -101,12 +105,7 @@ export default class QueryArea extends Component {
           <Btn
             styless={styles.button}
             ButtonsName={`都市土地使用分區`}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "都市土地使用分區",
-              "http://luz.tcd.gov.tw/WEB/"
-            )}
+            onPress={this._NavigationBtn.bind(this, "WebPage", "都市土地使用分區", "http://luz.tcd.gov.tw/WEB/")}
           />
           <Btn
             styless={styles.button}
@@ -121,22 +120,12 @@ export default class QueryArea extends Component {
           <Btn
             styless={styles.button}
             ButtonsName={`地籍圖資便民系統`}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "地籍圖資便民系統",
-              "http://easymap.land.moi.gov.tw/"
-            )}
+            onPress={this._NavigationBtn.bind(this, "WebPage", "地籍圖資便民系統", "http://easymap.land.moi.gov.tw/")}
           />
           <Btn
             styless={styles.button}
             ButtonsName={`地籍位置導引系統`}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "地籍位置導引系統",
-              "http://navimap.land.moi.gov.tw/"
-            )}
+            onPress={this._NavigationBtn.bind(this, "WebPage", "地籍位置導引系統", "http://navimap.land.moi.gov.tw/")}
           />
         </View>
       </ScrollView>

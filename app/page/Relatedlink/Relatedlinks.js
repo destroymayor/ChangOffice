@@ -6,17 +6,21 @@
 
 //相關連結
 import React, { Component } from "react";
-import { StyleSheet, Linking, Text, View } from "react-native";
+import { StyleSheet, Platform, Linking, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
 export default class Relatedlink extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -25,8 +29,7 @@ export default class Relatedlink extends Component {
         <Btn
           styless={styles.button}
           ButtonsName="內政部地政司"
-          onPress={() =>
-            Linking.openURL("https://www.land.moi.gov.tw/chhtml/index.asp")}
+          onPress={() => Linking.openURL("https://www.land.moi.gov.tw/chhtml/index.asp")}
         />
         <Btn
           styless={styles.button}
@@ -76,20 +79,13 @@ export default class Relatedlink extends Component {
         <Btn
           styless={styles.button}
           ButtonsName="彰化縣地方稅務局"
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "彰化縣地方稅務局",
-            "http://www.changtax.gov.tw/"
-          )}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣地方稅務局", "http://www.changtax.gov.tw/")}
         />
         <Btn
           styless={styles.button}
           ButtonsName="房地合一專區"
           onPress={() =>
-            Linking.openURL(
-              "https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543"
-            )}
+            Linking.openURL("https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543")}
         />
       </View>
     );

@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -44,11 +45,11 @@
 		83C820F4AC6D4BC399742D9D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C6479C759404B318D1A5FE9 /* Zocial.ttf */; };
 		94DED913B0CF4065AAFF8C71 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5226C30257404539BFEE6FBE /* libRNVectorIcons.a */; };
 		953FF7EDB9D741838ED94BDC /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E759A1CD5FFB411C8F48DB0B /* libCodePush.a */; };
+		9843D00F96C24065B494B3FF /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD68684A2775434B9620E223 /* libSplashScreen.a */; };
 		BC2D5108737C4792A9B495E5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C42A977B9147268C0BF0F2 /* libz.tbd */; };
 		BF8B1EEF7375450C9D993648 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7442B4086D69473F83621567 /* Foundation.ttf */; };
 		D9C9284EE36C4A2EA5742469 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80D33A18EFA44F77855DF722 /* EvilIcons.ttf */; };
 		DCAB934EB22B4CFFA46ECAA0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EB73E1414C4166AB2837E1 /* SimpleLineIcons.ttf */; };
-		9843D00F96C24065B494B3FF /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD68684A2775434B9620E223 /* libSplashScreen.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +249,13 @@
 			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
 			remoteInfo = RNVectorIcons;
 		};
+		7FB0E3011F21EB7000CBB565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8421D75042421CBB8C37E7 /* SplashScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7682761D8E76B80014119E;
+			remoteInfo = SplashScreen;
+		};
 		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
@@ -295,10 +303,10 @@
 		851BEE297E8D4BF2B8BBF1B6 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		86C6CD36D65A4208B43E5453 /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		977F17E020D94836A7E0FCAF /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		BB8421D75042421CBB8C37E7 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
+		CD68684A2775434B9620E223 /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		E759A1CD5FFB411C8F48DB0B /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
 		E8EB73E1414C4166AB2837E1 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		BB8421D75042421CBB8C37E7 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; name = "SplashScreen.xcodeproj"; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		CD68684A2775434B9620E223 /* libSplashScreen.a */ = {isa = PBXFileReference; name = "libSplashScreen.a"; path = "libSplashScreen.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +511,7 @@
 			children = (
 				5226C30257404539BFEE6FBE /* libRNVectorIcons.a */,
 				E759A1CD5FFB411C8F48DB0B /* libCodePush.a */,
+				CD68684A2775434B9620E223 /* libSplashScreen.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -519,6 +528,14 @@
 			isa = PBXGroup;
 			children = (
 				7F2EAAE51EEACC4D00948D66 /* libCodePush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB0E2FE1F21EB7000CBB565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0E3021F21EB7000CBB565 /* libSplashScreen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -673,7 +690,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = KHM9H562LJ;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = KHM9H562LJ;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -749,6 +770,10 @@
 				{
 					ProductGroup = 7F2EAADF1EEACC4C00948D66 /* Products */;
 					ProjectRef = 851BEE297E8D4BF2B8BBF1B6 /* RNVectorIcons.xcodeproj */;
+				},
+				{
+					ProductGroup = 7FB0E2FE1F21EB7000CBB565 /* Products */;
+					ProjectRef = BB8421D75042421CBB8C37E7 /* SplashScreen.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -944,6 +969,13 @@
 			remoteRef = 7F2EAAE71EEACC4D00948D66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7FB0E3021F21EB7000CBB565 /* libSplashScreen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSplashScreen.a;
+			remoteRef = 7FB0E3011F21EB7000CBB565 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1095,6 +1127,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KHM9H562LJ;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1128,6 +1161,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = KHM9H562LJ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1156,8 +1190,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = KHM9H562LJ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1171,6 +1208,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChanghuaLandsOffice;
 				PRODUCT_NAME = ChanghuaLandsOffice;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1180,7 +1218,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHM9H562LJ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1194,6 +1235,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChanghuaLandsOffice;
 				PRODUCT_NAME = ChanghuaLandsOffice;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

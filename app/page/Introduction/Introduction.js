@@ -6,7 +6,7 @@
 
 //本所簡介
 import React, { Component } from "react";
-import { StyleSheet, ScrollView, Text, View } from "react-native";
+import { StyleSheet, Platform, Linking, ScrollView, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
@@ -18,10 +18,14 @@ export default class Introduction extends Component {
 
   _NavigationBtnWeb(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -71,7 +75,12 @@ export default class Introduction extends Component {
           <Btn
             styless={styles.button}
             ButtonsName={`     FB粉絲專頁${"\n"}Youtube影音頻道`}
-            onPress={this._NavigationBtn.bind(this, "FBandYoutube")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "FB粉絲專頁",
+              "https://www.facebook.com/pages/%E6%BA%AA%E6%B9%96%E6%88%B6%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80/266668466720997?fref=ts"
+            )}
           />
         </View>
       </ScrollView>

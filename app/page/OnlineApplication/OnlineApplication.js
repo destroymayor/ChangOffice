@@ -6,17 +6,21 @@
 
 //線上申辦
 import React, { Component } from "react";
-import { StyleSheet, Linking, Text, View } from "react-native";
+import { Platform, StyleSheet, Linking, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
 export default class OnlineApplication extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -25,12 +29,7 @@ export default class OnlineApplication extends Component {
         <Btn
           styless={styles.button}
           ButtonsName="全國地政電子謄本系統"
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "全國地政電子謄本系統",
-            "http://210.71.181.102/"
-          )}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "全國地政電子謄本系統", "http://210.71.181.102/")}
         />
         <Btn
           styless={styles.button}
@@ -55,8 +54,7 @@ export default class OnlineApplication extends Component {
         <Btn
           styless={styles.button}
           ButtonsName={`    內政部地政司${"\n"}地政線上申辦系統`}
-          onPress={() =>
-            Linking.openURL("https://clir.land.moi.gov.tw/cap/?websn=474")}
+          onPress={() => Linking.openURL("https://clir.land.moi.gov.tw/cap/?websn=474")}
         />
         <Btn
           styless={styles.button}
@@ -71,12 +69,7 @@ export default class OnlineApplication extends Component {
         <Btn
           styless={styles.button}
           ButtonsName="Hinet地政服務"
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "Hinet地政服務",
-            "http://land.hinet.net/index.asp"
-          )}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
         />
         <Btn
           styless={styles.button}

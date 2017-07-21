@@ -6,17 +6,21 @@
 
 //下載專區
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Platform, Linking, StyleSheet, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 
 export default class Dowunloads extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
-    navigate(page, {
-      PageName: PageName,
-      PageUrl: PageUrl
-    });
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {

@@ -6,9 +6,10 @@
 
 //查詢專區
 import React, { Component } from "react";
-import { StyleSheet, ScrollView, Platform, Linking, Text, View } from "react-native";
+import { StyleSheet, ScrollView, Image, Platform, Linking, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class QueryArea extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
@@ -25,11 +26,11 @@ export default class QueryArea extends Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
+      <Image style={styles.container} source={require("../../image/backgrounds/queryarea.png")}>
+        <ScrollView>
           <Btn
-            styless={styles.button}
-            ButtonsName="案件辦理情形"
+            ImageSource={require("../../image/btn/QueryArea/q1.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -38,8 +39,8 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="案件辦理期限"
+            ImageSource={require("../../image/btn/QueryArea/q2.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -48,8 +49,8 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`應附證件來源機關`}
+            ImageSource={require("../../image/btn/QueryArea/q3.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -58,8 +59,8 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="新舊地建號對應"
+            ImageSource={require("../../image/btn/QueryArea/q4.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -68,8 +69,8 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`地政規費收費標準`}
+            ImageSource={require("../../image/btn/QueryArea/q5.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -78,8 +79,8 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="公告土地現值"
+            ImageSource={require("../../image/btn/QueryArea/q6.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -88,13 +89,18 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="申報地價"
-            onPress={this._NavigationBtn.bind(this, "WebPage", "申報地價", "url")}
+            ImageSource={require("../../image/btn/QueryArea/q7.png")}
+            ImageStyle={{ width: 180, height: 100 }}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "申報地價",
+              "http://land.chcg.gov.tw/07other/main.asp?main_id=2"
+            )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="彰化縣門牌"
+            ImageSource={require("../../image/btn/QueryArea/q8.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -103,13 +109,13 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`都市土地使用分區`}
+            ImageSource={require("../../image/btn/QueryArea/q9.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "WebPage", "都市土地使用分區", "http://luz.tcd.gov.tw/WEB/")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="不動產交易資訊"
+            ImageSource={require("../../image/btn/QueryArea/q10.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
@@ -118,17 +124,17 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`地籍圖資便民系統`}
+            ImageSource={require("../../image/btn/QueryArea/q11.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "WebPage", "地籍圖資便民系統", "http://easymap.land.moi.gov.tw/")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`地籍位置導引系統`}
+            ImageSource={require("../../image/btn/QueryArea/q12.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "WebPage", "地籍位置導引系統", "http://navimap.land.moi.gov.tw/")}
           />
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </Image>
     );
   }
 }
@@ -137,12 +143,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    marginTop: 10
-  },
-  button: {
-    alignSelf: "center",
-    width: 200,
-    height: 75,
-    margin: 5
+    width: screen.width,
+    height: screen.height
   }
 });

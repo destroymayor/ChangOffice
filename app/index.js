@@ -6,14 +6,7 @@
 
 //主頁
 import React, { Component } from "react";
-import {
-  Dimensions,
-  Image,
-  StyleSheet,
-  ScrollView,
-  Text,
-  View
-} from "react-native";
+import { Dimensions, Image, TouchableOpacity, StyleSheet, ScrollView, Text, View } from "react-native";
 
 import Btn from "./utils/Button";
 import screen from "./Style/screen";
@@ -36,85 +29,87 @@ export default class index extends Component {
     navigate(page);
   }
 
+  renderBtn = (navigations, styles, Imagesource) =>
+    <TouchableOpacity style={styles} onPress={this._NavigationBtn.bind(this, navigations)}>
+      <Image
+        style={{
+          width: 80,
+          height: 80
+        }}
+        resizeMode={Image.resizeMode.contain}
+        source={Imagesource}
+      />
+    </TouchableOpacity>;
+
   render() {
     return (
-      <View style={styles.container}>
+      <Image
+        resizeMode={Image.resizeMode.contain}
+        source={require("../app/image/backgrounds/Zback_01.png")}
+        style={styles.container}
+      >
+        <View style={{ flex: 1 }} />
         <View style={styles.containers}>
-          <Btn
-            styless={[
-              styles.button,
-              { marginTop: 10, position: "relative", top: 75, left: 10 }
-            ]}
-            ButtonsName="公告專區"
-            onPress={this._NavigationBtn.bind(this, "Proclamation")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginTop: 10, position: "relative", top: 0, right: 5 }
-            ]}
-            ButtonsName="查詢專區"
-            onPress={this._NavigationBtn.bind(this, "QueryArea")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginTop: 10, position: "relative", top: 0, left: 5 }
-            ]}
-            ButtonsName="下載專區"
-            onPress={this._NavigationBtn.bind(this, "Downloads")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginTop: 10, position: "relative", top: 75, right: 10 }
-            ]}
-            ButtonsName="試算專區"
-            onPress={this._NavigationBtn.bind(this, "TrialCalculation")}
-          />
+          {this.renderBtn(
+            "Proclamation",
+            [styles.button, { marginTop: 15, position: "relative", top: 75, left: 10 }],
+            require("./image/btn/index/index_porclamation.png")
+          )}
+          {this.renderBtn(
+            "QueryArea",
+            [styles.button, { marginTop: 10, position: "relative", top: 0, right: 5 }],
+            require("./image/btn/index/index_query.png")
+          )}
+          {this.renderBtn(
+            "Downloads",
+            [styles.button, { marginTop: 10, position: "relative", top: 0, left: 5 }],
+            require("./image/btn/index/index_download.png")
+          )}
+          {this.renderBtn(
+            "TrialCalculation",
+            [styles.button, { marginTop: 10, position: "relative", top: 75, right: 10 }],
+            require("./image/btn/index/index_trialcalculation.png")
+          )}
         </View>
         <View style={styles.containers}>
-          <Btn
-            styless={styles.mainbutton}
-            ButtonsName="本所簡介"
+          <TouchableOpacity
+            style={styles.mainbutton}
             onPress={this._NavigationBtn.bind(this, "Introduction")}
-          />
+          >
+            <Image
+              style={{
+                width: 130,
+                height: 130
+              }}
+              resizeMode={Image.resizeMode.contain}
+              source={require("./image/btn/index/index_introduction.png")}
+            />
+          </TouchableOpacity>
         </View>
         <View style={styles.containers}>
-          <Btn
-            styless={[
-              styles.button,
-              { marginBottom: 10, position: "relative", bottom: 50, left: 10 }
-            ]}
-            ButtonsName="線上申辦"
-            onPress={this._NavigationBtn.bind(this, "OnlineApplication")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginBottom: 10, position: "relative", top: 5, right: 5 }
-            ]}
-            ButtonsName="檔案應用"
-            onPress={this._NavigationBtn.bind(this, "FileApplication")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginBottom: 10, position: "relative", top: 5, left: 5 }
-            ]}
-            ButtonsName="實價登錄"
-            onPress={this._NavigationBtn.bind(this, "PricingLogin")}
-          />
-          <Btn
-            styless={[
-              styles.button,
-              { marginBottom: 10, position: "relative", bottom: 50, right: 10 }
-            ]}
-            ButtonsName="相關連結"
-            onPress={this._NavigationBtn.bind(this, "Relatedlink")}
-          />
+          {this.renderBtn(
+            "OnlineApplication",
+            [styles.button, { marginTop: 10, position: "relative", bottom: 50, left: 10 }],
+            require("./image/btn/index/index_online.png")
+          )}
+          {this.renderBtn(
+            "FileApplication",
+            [styles.button, { marginTop: 10, position: "relative", top: 5, right: 5 }],
+            require("./image/btn/index/index_filebtn.png")
+          )}
+          {this.renderBtn(
+            "PricingLogin",
+            [styles.button, { marginTop: 10, position: "relative", top: 5, left: 5 }],
+            require("./image/btn/index/index_pricinglogin.png")
+          )}
+          {this.renderBtn(
+            "Relatedlink",
+            [styles.button, { marginTop: 10, position: "relative", bottom: 50, right: 10 }],
+            require("./image/btn/index/index_relatedlink.png")
+          )}
         </View>
-      </View>
+        <View style={{ flex: 1 }} />
+      </Image>
     );
   }
 }
@@ -123,11 +118,11 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     height: screen.height,
-    width: screen.width
+    width: screen.width,
+    backgroundColor: "rgba(255,255,255,2)"
   },
   containers: {
-    flexDirection: "row",
-    marginTop: 5
+    flexDirection: "row"
   },
   button: {
     width: 80,

@@ -6,9 +6,10 @@
 
 //試算專區
 import React, { Component } from "react";
-import { Platform, Linking, StyleSheet, Text, View } from "react-native";
+import { Platform, Linking, Image, StyleSheet, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class TrialCalculation extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
@@ -25,17 +26,17 @@ export default class TrialCalculation extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Image style={styles.container} source={require("../../image/backgrounds/trialcalculation.png")}>
         <Btn
-          styless={styles.button}
-          ButtonsName="土地增值稅"
+          ImageSource={require("../../image/btn/TrialCalculation/t1.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={() => {
             Linking.openURL("https://www.etax.nat.gov.tw/etwmain/front/ETW158W9");
           }}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName="契稅"
+          ImageSource={require("../../image/btn/TrialCalculation/t2.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -44,8 +45,8 @@ export default class TrialCalculation extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName="贈與稅"
+          ImageSource={require("../../image/btn/TrialCalculation/t3.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -54,8 +55,8 @@ export default class TrialCalculation extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName="遺產稅"
+          ImageSource={require("../../image/btn/TrialCalculation/t4.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -64,8 +65,8 @@ export default class TrialCalculation extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName="規費"
+          ImageSource={require("../../image/btn/TrialCalculation/t5.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -73,7 +74,7 @@ export default class TrialCalculation extends Component {
             "http://www.xh-land.gov.tw/chaspx/search06.aspx?web=95"
           )}
         />
-      </View>
+      </Image>
     );
   }
 }
@@ -81,13 +82,8 @@ export default class TrialCalculation extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  button: {
-    width: 200,
-    height: 35,
-    margin: 5
+    width: screen.width,
+    height: screen.height,
+    justifyContent: "center"
   }
 });

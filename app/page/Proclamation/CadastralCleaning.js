@@ -4,26 +4,29 @@
  * @flow
  */
 
-//地籍清理等公告
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//地籍清理
+import React, { Component } from "react";
+import { StyleSheet, Image, Text, View } from "react-native";
+
+import screen from "../../Style/screen";
 
 export default class CadastralCleaning extends Component {
-
-    render() {
-        return (
-            <View style={ styles.container }>
-              <Text>暫無資料</Text>
-            </View>
-            );
-    }
+  render() {
+    return (
+      <Image style={styles.container} source={require("../../image/backgrounds/proclamation.png")}>
+        <Text style={{ color: "#fff", fontSize: 20 }}>暫無資料</Text>
+      </Image>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF'
-    }
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    width: screen.width,
+    height: screen.height,
+    backgroundColor: "transparent"
+  }
 });

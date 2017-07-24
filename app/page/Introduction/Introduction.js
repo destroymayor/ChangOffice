@@ -6,9 +6,10 @@
 
 //本所簡介
 import React, { Component } from "react";
-import { StyleSheet, Platform, Linking, ScrollView, Text, View } from "react-native";
+import { StyleSheet, Platform, Image, Linking, ScrollView, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class Introduction extends Component {
   _NavigationBtn(page) {
@@ -30,21 +31,21 @@ export default class Introduction extends Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
+      <Image style={styles.container} source={require("../../image/backgrounds/introduction.png")}>
+        <ScrollView>
           <Btn
-            styless={styles.button}
-            ButtonsName="本所資訊"
+            ImageSource={require("../../image/btn/Introduction/i1.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "QurArea")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="最新訊息"
+            ImageSource={require("../../image/btn/Introduction/i2.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "latestNews")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="聯絡我們"
+            ImageSource={require("../../image/btn/Introduction/i3.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
@@ -53,28 +54,28 @@ export default class Introduction extends Component {
             )}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="位置交通"
+            ImageSource={require("../../image/btn/Introduction/i4.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "LocationTraffic")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="辦公時間"
+            ImageSource={require("../../image/btn/Introduction/i5.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "OfficeHours")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="各課業務"
+            ImageSource={require("../../image/btn/Introduction/i6.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "EachClassBusiness")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName="樓層介紹"
+            ImageSource={require("../../image/btn/Introduction/i7.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(this, "FloorPresentation")}
           />
           <Btn
-            styless={styles.button}
-            ButtonsName={`     FB粉絲專頁${"\n"}Youtube影音頻道`}
+            ImageSource={require("../../image/btn/Introduction/i8.png")}
+            ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
@@ -82,8 +83,8 @@ export default class Introduction extends Component {
               "https://www.facebook.com/pages/%E6%BA%AA%E6%B9%96%E6%88%B6%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80/266668466720997?fref=ts"
             )}
           />
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </Image>
     );
   }
 }
@@ -92,12 +93,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  button: {
-    margin: 10,
-    width: 130,
-    height: 60
+    width: screen.width,
+    height: screen.height
   }
 });

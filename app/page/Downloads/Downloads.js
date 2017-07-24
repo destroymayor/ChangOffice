@@ -6,9 +6,10 @@
 
 //下載專區
 import React, { Component } from "react";
-import { Platform, Linking, StyleSheet, Text, View } from "react-native";
+import { Platform, Linking, Image, StyleSheet, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class Dowunloads extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
@@ -25,10 +26,10 @@ export default class Dowunloads extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Image style={styles.container} source={require("../../image/backgrounds/downloads.png")}>
         <Btn
-          styless={styles.button}
-          ButtonsName="申請須知及書表"
+          ImageSource={require("../../image/btn/Downloads/d1.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -37,8 +38,8 @@ export default class Dowunloads extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName="退費注意事項及申請書表"
+          ImageSource={require("../../image/btn/Downloads/d2.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -47,8 +48,8 @@ export default class Dowunloads extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName={`本所為民服務手冊`}
+          ImageSource={require("../../image/btn/Downloads/d3.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -57,8 +58,8 @@ export default class Dowunloads extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName={`本所轄區地段示意圖`}
+          ImageSource={require("../../image/btn/Downloads/d4.png")}
+          ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -66,7 +67,7 @@ export default class Dowunloads extends Component {
             "http://www.xh-land.gov.tw/chaspx/download.aspx?web=100"
           )}
         />
-      </View>
+      </Image>
     );
   }
 }
@@ -74,13 +75,8 @@ export default class Dowunloads extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  button: {
-    width: 200,
-    height: 45,
-    margin: 5
+    width: screen.width,
+    height: screen.height,
+    justifyContent: "center"
   }
 });

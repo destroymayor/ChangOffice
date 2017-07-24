@@ -5,43 +5,58 @@
  */
 
 //檔案應用
-import React, { Component } from 'react';
-import { StyleSheet, Linking, Text, View } from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, Image, Linking, Text, View } from "react-native";
 
-import Btn from '../../utils/Button'
+import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class FileApplication extends Component {
+  _NavigationBtn(page) {
+    const { navigate } = this.props.navigation;
+    navigate(page);
+  }
 
-    _NavigationBtn(page) {
-        const {navigate} = this.props.navigation;
-        navigate(page);
-    }
-
-    render() {
-        return (
-            <View style={ styles.container }>
-              <Btn styless={ styles.button } ButtonsName='檔案線上申請' onPress={ () => {
-                                                                                Linking.openURL('http://www.xh-land.gov.tw/chaspx/Apply.aspx?web=59')
-                                                                            } } />
-              <Btn styless={ styles.button } ButtonsName='檔案應用閱覽須知' onPress={ this._NavigationBtn.bind(this, 'ArchivesApplicationNotes') } />
-              <Btn styless={ styles.button } ButtonsName='申請書及範例' onPress={ this._NavigationBtn.bind(this, 'Applicationandexample') } />
-              <Btn styless={ styles.button } ButtonsName='作業流程圖' onPress={ this._NavigationBtn.bind(this, 'JobflowChart') } />
-              <Btn styless={ styles.button } ButtonsName='收費標準' onPress={ this._NavigationBtn.bind(this, 'Charges') } />
-            </View>
-            );
-    }
+  render() {
+    return (
+      <Image style={styles.container} source={require("../../image/backgrounds/fileapplication.png")}>
+        <Btn
+          ImageSource={require("../../image/btn/FileApplication/f1.png")}
+          ImageStyle={{ width: 180, height: 90 }}
+          onPress={() => {
+            Linking.openURL("http://www.xh-land.gov.tw/chaspx/Apply.aspx?web=59");
+          }}
+        />
+        <Btn
+          ImageSource={require("../../image/btn/FileApplication/f2.png")}
+          ImageStyle={{ width: 180, height: 90 }}
+          onPress={this._NavigationBtn.bind(this, "ArchivesApplicationNotes")}
+        />
+        <Btn
+          ImageSource={require("../../image/btn/FileApplication/f3.png")}
+          ImageStyle={{ width: 180, height: 90 }}
+          onPress={this._NavigationBtn.bind(this, "Applicationandexample")}
+        />
+        <Btn
+          ImageSource={require("../../image/btn/FileApplication/f4.png")}
+          ImageStyle={{ width: 180, height: 90 }}
+          onPress={this._NavigationBtn.bind(this, "JobflowChart")}
+        />
+        <Btn
+          ImageSource={require("../../image/btn/FileApplication/f5.png")}
+          ImageStyle={{ width: 180, height: 90 }}
+          onPress={this._NavigationBtn.bind(this, "Charges")}
+        />
+      </Image>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF'
-    },
-    button: {
-        margin: 10,
-        width: 130,
-        height: 60
-    }
+  container: {
+    flex: 1,
+    width: screen.width,
+    height: screen.height,
+    justifyContent: "center"
+  }
 });

@@ -1,8 +1,9 @@
 //最新消息
 import React, { Component } from "react";
-import { StyleSheet, Platform, Linking, ScrollView, Text, View } from "react-native";
+import { StyleSheet, Image, Platform, Linking, ScrollView, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
+import screen from "../../Style/screen";
 
 export default class latestNews extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
@@ -19,10 +20,10 @@ export default class latestNews extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Image style={styles.container} source={require("../../image/backgrounds/introduction.png")}>
         <Btn
-          styless={styles.button}
-          ButtonsName={`法規新訊`}
+          ImageSource={require("../../image/btn/Introduction/i21.png")}
+          ImageStyle={{ width: 180, height: 100 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -31,8 +32,8 @@ export default class latestNews extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName={`新聞快遞`}
+          ImageSource={require("../../image/btn/Introduction/i22.png")}
+          ImageStyle={{ width: 180, height: 100 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -41,8 +42,8 @@ export default class latestNews extends Component {
           )}
         />
         <Btn
-          styless={styles.button}
-          ButtonsName={`便民訊息`}
+          ImageSource={require("../../image/btn/Introduction/i23.png")}
+          ImageStyle={{ width: 180, height: 100 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
@@ -50,7 +51,7 @@ export default class latestNews extends Component {
             "http://www.xh-land.gov.tw/chaspx/service.aspx?web=86"
           )}
         />
-      </View>
+      </Image>
     );
   }
 }
@@ -60,11 +61,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  button: {
-    margin: 10,
-    width: 130,
-    height: 60
+    width: screen.width,
+    height: screen.height
   }
 });

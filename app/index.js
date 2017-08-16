@@ -38,16 +38,6 @@ export default class index extends Component {
         position_top: 120,
         positionBottom_top: 30
       });
-    } else if (screen.height > 1200) {
-      this.setState({
-        height: 200,
-        width: 200,
-        midheight: 220,
-        midwidth: 220,
-        midPositionTop: 40,
-        position_top: 140,
-        positionBottom_top: 50
-      });
     }
   }
 

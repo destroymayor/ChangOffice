@@ -16,7 +16,7 @@ export default class JobflowChart extends Component {
     return (
       <View style={styles.container}>
         <Image
-          style={{ width: screen.width, height: screen.height }}
+          style={{ width: screen.widt - 10, height: screen.height - 10 }}
           source={require("../../image/flowchart.png")}
           pixels={{ width: screen.width, height: screen.height }}
         />

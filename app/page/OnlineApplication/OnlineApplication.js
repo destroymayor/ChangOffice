@@ -85,7 +85,7 @@ export default class OnlineApplication extends Component {
               this,
               "WebPage",
               "下班延時預約",
-              "http://www.xh-land.gov.tw/chaspx/Service_Detail.aspx?web=88&id=1479"
+              "https://docs.google.com/forms/d/1IPE-FzmLOWuV3KuyyP6ldn3GsllaoAe6SRWfbwfqQV0/edit"
             )}
           />
           <Btn
@@ -95,7 +95,7 @@ export default class OnlineApplication extends Component {
               this,
               "WebPage",
               "假日預約",
-              "http://www.xh-land.gov.tw/chaspx/Service_Detail.aspx?web=88&id=1480"
+              "https://docs.google.com/forms/d/1cy-2UdiYiCzjy9e1e7m6c-tWWuEcGkOkwsuHlCn6KqU/edit"
             )}
           />
         </ScrollView>

@@ -41,7 +41,7 @@ export default class TrialCalculation extends Component {
             this,
             "WebPage",
             "契稅",
-            "http://www.xh-land.gov.tw/chaspx/search04.aspx?web=91"
+            "https://www.etax.nat.gov.tw/etwmain/web/ETW158W11"
           )}
         />
         <Btn
@@ -51,7 +51,7 @@ export default class TrialCalculation extends Component {
             this,
             "WebPage",
             "贈與稅",
-            "http://www.xh-land.gov.tw/chaspx/search03.aspx?web=92"
+            "https://www.etax.nat.gov.tw/etwmain/front/ETW158W7"
           )}
         />
         <Btn
@@ -61,18 +61,13 @@ export default class TrialCalculation extends Component {
             this,
             "WebPage",
             "遺產稅",
-            "http://www.xh-land.gov.tw/chaspx/search02.aspx?web=93"
+            "https://www.etax.nat.gov.tw/etwmain/front/ETW158W6"
           )}
         />
         <Btn
           ImageSource={require("../../image/btn/TrialCalculation/t5.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "規費",
-            "http://www.xh-land.gov.tw/chaspx/search06.aspx?web=95"
-          )}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "貸款", "http://rate.bot.com.tw/trial/t05")}
         />
       </Image>
     );

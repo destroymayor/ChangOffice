@@ -76,12 +76,7 @@ export default class Introduction extends Component {
           <Btn
             ImageSource={require("../../image/btn/Introduction/i8.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtnWeb.bind(
-              this,
-              "WebPage",
-              "FB粉絲專頁",
-              "https://www.facebook.com/pages/%E6%BA%AA%E6%B9%96%E6%88%B6%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80/266668466720997?fref=ts"
-            )}
+            onPress={this._NavigationBtn.bind(this, "FBandYoutube")}
           />
         </ScrollView>
       </Image>

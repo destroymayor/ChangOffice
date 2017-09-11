@@ -44,7 +44,7 @@ export default class index extends Component {
   componentDidMount() {
     this.timer = setTimeout(() => {
       SplashScreen.hide();
-    }, 800);
+    }, 3000);
   }
 
   componentWillUnmount() {
@@ -56,7 +56,7 @@ export default class index extends Component {
     navigate(page);
   }
 
-  renderBtn = (navigations, styles, Imagesource) =>
+  renderBtn = (navigations, styles, Imagesource) => (
     <TouchableOpacity style={styles} onPress={this._NavigationBtn.bind(this, navigations)}>
       <Image
         style={{
@@ -66,12 +66,13 @@ export default class index extends Component {
         resizeMode={Image.resizeMode.contain}
         source={Imagesource}
       />
-    </TouchableOpacity>;
+    </TouchableOpacity>
+  );
 
   render() {
     return (
       <Image
-        resizeMode={Image.resizeMode.contain}
+        resizeMode={Image.resizeMode.stretch}
         source={require("../app/image/backgrounds/Zback_01.png")}
         style={styles.container}
       >

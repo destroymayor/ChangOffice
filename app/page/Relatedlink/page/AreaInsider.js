@@ -4,14 +4,14 @@
  * @flow
  */
 
-//下載專區
+//轄區內戶政事務所
 import React, { Component } from "react";
 import { Platform, Linking, Image, StyleSheet, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
-import screen from "../../Style/screen";
+import Btn from "../../../utils/Button";
+import screen from "../../../Style/screen";
 
-export default class Dowunloads extends Component {
+export default class AreaInsiders extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
     if (Platform.OS === "android") {
@@ -26,35 +26,35 @@ export default class Dowunloads extends Component {
 
   render() {
     return (
-      <Image style={styles.container} source={require("../../image/backgrounds/downloads.png")}>
+      <Image style={styles.container} source={require("../../../image/backgrounds/relatedlink.png")}>
         <Btn
-          ImageSource={require("../../image/btn/Downloads/d1.png")}
+          ImageSource={require("../../../image/btn/Relatedlink/btn/AreaInsider/a1.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "申請須知及書表",
-            "http://www.xh-land.gov.tw/chaspx/download3.aspx?web=97"
+            "溪湖鎮戶政事務所",
+            "http://house.chcg.gov.tw/xihu/00home/index1.asp"
           )}
         />
         <Btn
-          ImageSource={require("../../image/btn/Downloads/d3.png")}
+          ImageSource={require("../../../image/btn/Relatedlink/btn/AreaInsider/a2.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "本所為民服務手冊",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=89"
+            "埔心鄉戶政事務所",
+            "http://house.chcg.gov.tw/pusin/00home/index1.asp"
           )}
         />
         <Btn
-          ImageSource={require("../../image/btn/Downloads/d4.png")}
+          ImageSource={require("../../../image/btn/Relatedlink/btn/AreaInsider/a3.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "本所轄區地段示意圖",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=100"
+            "埔鹽鄉戶政事務所",
+            "http://house.chcg.gov.tw/puyan/00home/index1.asp"
           )}
         />
       </Image>

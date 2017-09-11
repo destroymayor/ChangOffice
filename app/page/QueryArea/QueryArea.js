@@ -65,7 +65,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "新舊地建號對應",
-              "http://www.xh-land.gov.tw/chaspx/search05.aspx?web=185"
+              "http://land-app2.chcg.gov.tw/query/oldnew.jsp?menu=true&type=R"
             )}
           />
           <Btn
@@ -89,23 +89,13 @@ export default class QueryArea extends Component {
             )}
           />
           <Btn
-            ImageSource={require("../../image/btn/QueryArea/q7.png")}
-            ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "申報地價",
-              "http://land.chcg.gov.tw/07other/main.asp?main_id=2"
-            )}
-          />
-          <Btn
             ImageSource={require("../../image/btn/QueryArea/q8.png")}
             ImageStyle={{ width: 180, height: 100 }}
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
               "彰化縣門牌",
-              "http://address.chcg.gov.tw/chcgCul/Culture/Default.aspx"
+              "http://addressmt.tgos.nat.gov.tw/address/index.cfm?city_id=10007"
             )}
           />
           <Btn
@@ -120,18 +110,18 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "不動產交易資訊",
-              "http://pri.land.moi.gov.tw/realestate_query/"
+              "https://pip.moi.gov.tw/V2/Default.aspx"
             )}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q11.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "地籍圖資便民系統", "http://easymap.land.moi.gov.tw/")}
-          />
-          <Btn
-            ImageSource={require("../../image/btn/QueryArea/q12.png")}
-            ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "地籍位置導引系統", "http://navimap.land.moi.gov.tw/")}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "地籍圖資便民系統",
+              "http://easymap.land.moi.gov.tw/R02/Index"
+            )}
           />
         </ScrollView>
       </Image>

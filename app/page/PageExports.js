@@ -57,6 +57,10 @@ import DeclarationBook from "./PricingLogin/DeclarationBook";
 //-----------------------//
 //相關連結
 import Relatedlink from "./Relatedlink/Relatedlinks";
+import RelatedlinkArea from "./Relatedlink/page/Area";
+import RelatedlinkChanghua from "./Relatedlink/page/Changhua";
+import RelatedlinkGovernment from "./Relatedlink/page/Government";
+import RelatedlinkAreaInsiders from "./Relatedlink/page/Government";
 
 export default {
   Introduction: Introduction,
@@ -87,5 +91,9 @@ export default {
   JobflowChart: JobflowChart,
   PricingLogin: PricingLogin,
   DeclarationBook: DeclarationBook,
-  Relatedlink: Relatedlink
+  Relatedlink: Relatedlink,
+  RelatedlinkArea: RelatedlinkArea,
+  RelatedlinkChanghua: RelatedlinkChanghua,
+  RelatedlinkGovernment: RelatedlinkGovernment,
+  RelatedlinkAreaInsiders: RelatedlinkAreaInsiders
 };

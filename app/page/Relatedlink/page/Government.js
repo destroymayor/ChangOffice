@@ -4,14 +4,14 @@
  * @flow
  */
 
-//下載專區
+//彰化縣政府
 import React, { Component } from "react";
 import { Platform, Linking, Image, StyleSheet, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
-import screen from "../../Style/screen";
+import Btn from "../../../utils/Button";
+import screen from "../../../Style/screen";
 
-export default class Dowunloads extends Component {
+export default class Government extends Component {
   _NavigationBtn(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
     if (Platform.OS === "android") {
@@ -26,35 +26,25 @@ export default class Dowunloads extends Component {
 
   render() {
     return (
-      <Image style={styles.container} source={require("../../image/backgrounds/downloads.png")}>
+      <Image style={styles.container} source={require("../../../image/backgrounds/relatedlink.png")}>
         <Btn
-          ImageSource={require("../../image/btn/Downloads/d1.png")}
+          ImageSource={require("../../../image/btn/Relatedlink/btn/Government/g1.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "申請須知及書表",
-            "http://www.xh-land.gov.tw/chaspx/download3.aspx?web=97"
+            "彰化縣政府",
+            "http://www.chcg.gov.tw/ch/00home/home.asp"
           )}
         />
         <Btn
-          ImageSource={require("../../image/btn/Downloads/d3.png")}
+          ImageSource={require("../../../image/btn/Relatedlink/btn/Government/g2.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "本所為民服務手冊",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=89"
-          )}
-        />
-        <Btn
-          ImageSource={require("../../image/btn/Downloads/d4.png")}
-          ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "本所轄區地段示意圖",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=100"
+            "彰化縣政府地政處",
+            "http://land.chcg.gov.tw/00home/index6.asp"
           )}
         />
       </Image>

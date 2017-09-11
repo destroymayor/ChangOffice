@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import {
-  StackNavigator,
-  NavigationActions,
-  getStateForAction
-} from "react-navigation";
+import { StackNavigator, NavigationActions, getStateForAction } from "react-navigation";
 
 import BarClose from "./utils/BarClose";
 import WebPage from "./utils/WebViewPage";
@@ -149,6 +145,22 @@ const Steup = StackNavigator(
     Relatedlink: {
       screen: page.Relatedlink,
       navigationOptions: { title: "相關連結" }
+    },
+    RelatedlinkArea: {
+      screen: page.RelatedlinkArea,
+      navigationOptions: { title: "轄區內公所" }
+    },
+    RelatedlinkChanghua: {
+      screen: page.RelatedlinkChanghua,
+      navigationOptions: { title: "彰化縣各地政事務所" }
+    },
+    RelatedlinkGovernment: {
+      screen: page.RelatedlinkGovernment,
+      navigationOptions: { title: "彰化縣政府" }
+    },
+    RelatedlinkAreaInsiders: {
+      screen: page.RelatedlinkAreaInsiders,
+      navigationOptions: { title: "轄區內戶政事務所" }
     },
     WebPage: { screen: WebPage }
   },

@@ -24,6 +24,11 @@ export default class Relatedlink extends Component {
     }
   }
 
+  _NavigationBtnPage(page) {
+    const { navigate } = this.props.navigation;
+    navigate(page);
+  }
+
   render() {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/relatedlink.png")}>
@@ -36,42 +41,22 @@ export default class Relatedlink extends Component {
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r2.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "彰化縣政府",
-              "http://www.chcg.gov.tw/ch/00home/home.asp"
-            )}
+            onPress={this._NavigationBtnPage.bind(this, "RelatedlinkGovernment")}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r3.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "彰化縣各地政事務所",
-              "http://land.chcg.gov.tw/07other/main.asp?main_id=7817"
-            )}
+            onPress={this._NavigationBtnPage.bind(this, "RelatedlinkChanghua")}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r4.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "轄區內公所",
-              "http://town.chcg.gov.tw/xihu/00home/index7.asp"
-            )}
+            onPress={this._NavigationBtnPage.bind(this, "RelatedlinkArea")}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r5.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "轄區內戶政事務所",
-              "http://www.xh-land.gov.tw/chaspx/default.aspx"
-            )}
+            onPress={this._NavigationBtnPage.bind(this, "RelatedlinkAreaInsiders")}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r6.png")}

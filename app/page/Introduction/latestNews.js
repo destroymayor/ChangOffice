@@ -28,7 +28,7 @@ export default class latestNews extends Component {
             this,
             "WebPage",
             "法規新訊",
-            "http://www.xh-land.gov.tw/chaspx/news1.aspx?web=39"
+            "https://www.land.moi.gov.tw/law/chhtml/newlaw.asp"
           )}
         />
         <Btn

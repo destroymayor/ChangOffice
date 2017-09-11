@@ -6,13 +6,15 @@
 
 //辦公時間
 import React, { Component } from "react";
-import { StyleSheet, Image, Text, View } from "react-native";
+import { StyleSheet, ScrollView, Image, Text, View } from "react-native";
 import screen from "../../Style/screen";
 
 export default class OfficeHours extends Component {
   render() {
     return (
-      <Image style={styles.container} source={require("../../image/backgrounds/introduction_time.png")} />
+      <ScrollView>
+        <Image style={styles.container} source={require("../../image/backgrounds/introduction_time.png")} />
+      </ScrollView>
     );
   }
 }

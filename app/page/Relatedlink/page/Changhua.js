@@ -36,7 +36,12 @@ export default class Changhua extends Component {
           <Btn
             ImageSource={require("../../../image/btn/Relatedlink/btn/Changhua/c2.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "員林地政", "http://www.yl-land.gov.tw/chaspx/")}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "員林地政",
+              "http://www.yl-land.gov.tw/PDA/default.aspx?websn=35"
+            )}
           />
           <Btn
             ImageSource={require("../../../image/btn/Relatedlink/btn/Changhua/c3.png")}
@@ -45,7 +50,7 @@ export default class Changhua extends Component {
               this,
               "WebPage",
               "北斗地政",
-              "http://www.bd-land.gov.tw/chaspx/Default.aspx"
+              "http://www.bd-land.gov.tw/mobile/default.aspx"
             )}
           />
           <Btn
@@ -55,7 +60,7 @@ export default class Changhua extends Component {
               this,
               "WebPage",
               "鹿港地政",
-              "http://www.lukang-land.gov.tw/chaspx"
+              "http://www.lukang-land.gov.tw/PDA/default.aspx?websn=21"
             )}
           />
           <Btn

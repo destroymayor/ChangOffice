@@ -32,6 +32,7 @@ import CadastralCleaning from "./Proclamation/CadastralCleaning";
 
 //查詢專區
 import QueryArea from "./QueryArea/QueryArea";
+import CaseHandlingImagePage from "./QueryArea/CaseHandlingImagePage ";
 
 //-----------------------//
 //下載專區
@@ -81,6 +82,7 @@ export default {
   CadastralCleaning: CadastralCleaning,
   //-------------------------//
   QueryArea: QueryArea,
+  CaseHandlingImagePage: CaseHandlingImagePage,
   Downloads: Downloads,
   TrialCalculation: TrialCalculation,
   OnlineApplication: OnlineApplication,

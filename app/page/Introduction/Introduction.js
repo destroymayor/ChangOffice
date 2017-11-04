@@ -6,7 +6,7 @@
 
 //本所簡介
 import React, { Component } from "react";
-import { StyleSheet, Platform, Image, Linking, ScrollView, Text, View } from "react-native";
+import { StyleSheet, Platform, Image, Linking, ScrollView, TouchableOpacity, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 import screen from "../../Style/screen";
@@ -41,7 +41,12 @@ export default class Introduction extends Component {
           <Btn
             ImageSource={require("../../image/btn/Introduction/i2.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "latestNews")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "最新消息",
+              "http://www.xh-land.gov.tw/?Page=Bulletin&SortKey=1&Guid=a24ee7fc-6d31-4f3a-bfdb-9ae15d117630"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Introduction/i3.png")}
@@ -50,7 +55,7 @@ export default class Introduction extends Component {
               this,
               "WebPage",
               "聯絡我們",
-              "http://www.xh-land.gov.tw/chaspx/guestbook.aspx?web=104"
+              "http://www.xh-land.gov.tw/?Page=MailBox&Guid=5a11e4df-6c77-1e95-b239-f5affdb85088"
             )}
           />
           <Btn
@@ -74,9 +79,24 @@ export default class Introduction extends Component {
             onPress={this._NavigationBtn.bind(this, "FloorPresentation")}
           />
           <Btn
-            ImageSource={require("../../image/btn/Introduction/i8.png")}
+            ImageSource={require("../../image/btn/Introduction/facebook.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "FBandYoutube")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "Facebook粉絲專頁",
+              "https://www.facebook.com/xihuland/"
+            )}
+          />
+          <Btn
+            ImageSource={require("../../image/btn/Introduction/youtube.png")}
+            ImageStyle={{ width: 180, height: 100 }}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "YouTube影音頻道",
+              "https://www.youtube.com/channel/UC6JBfN88gZdqrSqUEnh8VMg"
+            )}
           />
         </ScrollView>
       </Image>

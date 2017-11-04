@@ -4,13 +4,20 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "android:build": "cd android && ./gradlew assembleRelease",
+    "android:install": "cd android && ./gradlew installRelease",
+    "android:clean": "cd android && ./gradlew clean",
+    "start-android": "react-native run-android",
+    "start-ios": "react-native run-ios"
   },
   "dependencies": {
     "babel-plugin-transform-remove-console": "^6.8.4",
     "react": "16.0.0-alpha.06",
     "react-native": "0.44.3",
     "react-native-code-push": "^2.0.3-beta",
+    "react-native-pdf-view": "^0.3.2",
     "react-native-splash-screen": "^2.1.0",
     "react-native-transformable-image": "^0.0.18",
     "react-native-vector-icons": "4.2.0",

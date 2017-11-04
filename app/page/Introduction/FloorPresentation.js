@@ -19,13 +19,12 @@ export default class FloorPresentation extends Component {
             style={{
               color: "#fff",
               fontSize: 20,
-              marginTop: 20,
-              marginLeft: 10,
+              marginLeft: 20,
               marginRight: 10,
               marginBottom: 10
             }}
           >
-            一樓平面圖：一樓為登記課辦公室，前方為服務台及民眾休息區，右側為倉庫及哺乳室，左側有樓梯、廁所及廚房。
+            1.一樓平面圖
           </Text>
           <Image
             resizeMode={Image.resizeMode.contain}
@@ -40,12 +39,12 @@ export default class FloorPresentation extends Component {
             style={{
               color: "#fff",
               fontSize: 20,
-              marginLeft: 10,
+              marginLeft: 20,
               marginRight: 10,
               marginBottom: 10
             }}
           >
-            二樓平面圖：二樓為地價課辦公室及總務、人事、出納、主計辦公室，右側為主任室、會議室及廁所，左側有樓梯。
+            2.二樓平面圖
           </Text>
           <Image
             resizeMode={Image.resizeMode.contain}
@@ -60,12 +59,12 @@ export default class FloorPresentation extends Component {
             style={{
               color: "#fff",
               fontSize: 20,
-              marginLeft: 10,
+              marginLeft: 20,
               marginRight: 10,
               marginBottom: 10
             }}
           >
-            三樓平面圖：三樓為測量課辦公室及總會議室，右側為倉庫及電腦室，左側有樓梯及廁所。
+            3.三樓平面圖
           </Text>
           <Image
             resizeMode={Image.resizeMode.contain}

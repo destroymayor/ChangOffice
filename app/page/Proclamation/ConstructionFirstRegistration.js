@@ -32,30 +32,24 @@ export default class ConstructionFirstRegistration extends Component {
 
   renderRow({ item }) {
     return (
-      <View
-        style={{
-          width: "100%",
-          marginBottom: 10,
-          backgroundColor: "rgba(255,255,255,0.4)"
-        }}
-      >
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+      <View style={styles.ConstructionFirstRegistrationItemView}>
+        <Text style={styles.ConstructionFirstRegistrationItemText}>
           項次：
           {item.Line}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.ConstructionFirstRegistrationItemText}>
           年 字 號：
           {item.Year}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.ConstructionFirstRegistrationItemText}>
           公告期間：
           {item.RightPerson}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.ConstructionFirstRegistrationItemText}>
           建物座落：
           {item.DuringTheAnnouncementPeriod}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.ConstructionFirstRegistrationItemText}>
           所有權人：
           {item.Lot}
         </Text>
@@ -70,5 +64,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: screen.width,
     height: screen.height
+  },
+  ConstructionFirstRegistrationItemView: {
+    width: "100%",
+    marginBottom: 10,
+    backgroundColor: "rgba(255,255,255,0.4)"
+  },
+  ConstructionFirstRegistrationItemText: {
+    fontSize: 18,
+    marginLeft: 10,
+    marginBottom: 2
   }
 });

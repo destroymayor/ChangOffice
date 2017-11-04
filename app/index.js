@@ -44,7 +44,7 @@ export default class index extends Component {
   componentDidMount() {
     this.timer = setTimeout(() => {
       SplashScreen.hide();
-    }, 3000);
+    }, 1000);
   }
 
   componentWillUnmount() {

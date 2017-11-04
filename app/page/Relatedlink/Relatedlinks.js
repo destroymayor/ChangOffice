@@ -36,7 +36,7 @@ export default class Relatedlink extends Component {
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r1.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={() => Linking.openURL("https://www.land.moi.gov.tw/chhtml/index.asp")}
+            onPress={() => Linking.openURL("https://www.land.moi.gov.tw/pda/index.asp")}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r2.png")}

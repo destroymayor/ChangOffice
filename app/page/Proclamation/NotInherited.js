@@ -32,22 +32,16 @@ export default class NotInherited extends Component {
 
   renderRow({ item }) {
     return (
-      <View
-        style={{
-          width: "100%",
-          marginBottom: 10,
-          backgroundColor: "rgba(255,255,255,0.4)"
-        }}
-      >
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+      <View style={styles.NotlnheritedItemView}>
+        <Text style={styles.NotlnheritedItemText}>
           項次：
           {item.Line}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.NotlnheritedItemText}>
           年度：
           {item.Year}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.NotlnheritedItemText}>
           收件案號：
           <Text
             style={{ color: "#2894ff" }}
@@ -58,7 +52,7 @@ export default class NotInherited extends Component {
             {item.ReceiptNumber}
           </Text>
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.NotlnheritedItemText}>
           被繼承人姓名：
           {item.TheNameOfTheSuccessor}
         </Text>
@@ -73,5 +67,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: screen.width,
     height: screen.height
+  },
+  NotlnheritedItemView: {
+    width: "100%",
+    marginBottom: 10,
+    backgroundColor: "rgba(255,255,255,0.4)"
+  },
+  NotlnheritedItemText: {
+    fontSize: 18,
+    marginLeft: 10,
+    marginBottom: 2
   }
 });

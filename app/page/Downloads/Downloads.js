@@ -54,7 +54,7 @@ export default class Dowunloads extends Component {
             this,
             "WebPage",
             "本所轄區地段示意圖",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=100"
+            "http://www.xh-land.gov.tw/?Guid=6a74b6fc-d8a8-d713-28a4-d87c1ddf68b8"
           )}
         />
       </Image>

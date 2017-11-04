@@ -3254,6 +3254,10 @@ react-native-gesture-responder@0.1.1:
   dependencies:
     react-timer-mixin "^0.13.3"
 
+react-native-pdf-view@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-pdf-view/-/react-native-pdf-view-0.3.2.tgz#aca9887079bf8f71a3123e23d6ee36f55724a9d8"
+
 react-native-scroller@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-scroller/-/react-native-scroller-0.0.6.tgz#dea8c89bd1ca2d2445fbb6b3a90960df6c1767ff"

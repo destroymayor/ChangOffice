@@ -18,7 +18,7 @@ export default class DeclarationBook extends Component {
       exampledata: [
         {
           Line: "01",
-          Title: "不動產成交案件實際資訊申報書與填寫範例",
+          Title: "不動產成交案件實際資訊申報書",
           File1Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=235&id=1049&f=2",
           click1: "193",
           File2Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=235&id=1049&f=3",
@@ -43,13 +43,7 @@ export default class DeclarationBook extends Component {
 
   renderRow({ item }) {
     return (
-      <View
-        style={{
-          width: "100%",
-          marginBottom: 10,
-          backgroundColor: "rgba(255,255,255,0.5)"
-        }}
-      >
+      <View style={styles.DeclarationBookItemView}>
         <Text style={{ fontSize: 20, margin: 3 }}>
           項次:
           {item.Line}
@@ -97,5 +91,10 @@ const styles = StyleSheet.create({
     width: screen.width,
     height: screen.height,
     justifyContent: "center"
+  },
+  DeclarationBookItemView: {
+    width: "100%",
+    marginBottom: 10,
+    backgroundColor: "rgba(255,255,255,0.5)"
   }
 });

@@ -6,7 +6,7 @@
 
 //公告專區
 import React, { Component } from "react";
-import { ScrollView, StyleSheet, Image, Text, View } from "react-native";
+import { Platform, ScrollView, StyleSheet, Image, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 import screen from "../../Style/screen";
@@ -15,6 +15,18 @@ export default class Proclamation extends Component {
   _NavigationBtn(page) {
     const { navigate } = this.props.navigation;
     navigate(page);
+  }
+
+  _NavigationBtnWeb(page, PageName, PageUrl) {
+    const { navigate } = this.props.navigation;
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -44,7 +56,12 @@ export default class Proclamation extends Component {
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p5.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "CadastralCleaning")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "地籍清理",
+              "http://land.chcg.gov.tw/07other/other01_list.asp?topsn=3526&cate_id=3559"
+            )}
           />
         </ScrollView>
       </Image>

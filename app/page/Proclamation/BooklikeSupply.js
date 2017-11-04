@@ -32,38 +32,32 @@ export default class BooklikeSupply extends Component {
 
   renderRow({ item }) {
     return (
-      <View
-        style={{
-          width: "100%",
-          marginBottom: 10,
-          backgroundColor: "rgba(255,255,255,0.4)"
-        }}
-      >
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+      <View style={styles.BooklikeSupplyItemView}>
+        <Text style={styles.BooklikeSupplyItemText}>
           項次:
           {item.Line}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           年 字 號:
           {item.Year}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           權利人:
           {item.RightPerson}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           公告期間:
           {item.DuringTheAnnouncementPeriod}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           地段:
           {item.Lot}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           地號建號:
           {item.LandmarkKeyNumber}
         </Text>
-        <Text style={{ fontSize: 18, marginLeft: 10, marginBottom: 2 }}>
+        <Text style={styles.BooklikeSupplyItemText}>
           書狀號:
           {item.BookNumber}
         </Text>
@@ -78,5 +72,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: screen.width,
     height: screen.height
+  },
+  BooklikeSupplyItemView: {
+    width: "100%",
+    marginBottom: 10,
+    backgroundColor: "rgba(255,255,255,0.4)"
+  },
+  BooklikeSupplyItemText: {
+    fontSize: 18,
+    marginLeft: 10,
+    marginBottom: 2
   }
 });

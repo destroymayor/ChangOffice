@@ -9,12 +9,17 @@ import React, { Component } from "react";
 import { ScrollView, Image, StyleSheet, Text, View } from "react-native";
 
 import screen from "../../Style/screen";
+import Images from "react-native-transformable-image";
 
 export default class LocationTraffic extends Component {
   render() {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/introduction.png")}>
-        <Image style={{ width: "100%", height: "50%" }} source={require("../../image/map.png")} />
+        <Images
+          style={{ width: screen.width, height: "70%" }}
+          source={require("../../image/map.png")}
+          pixels={{ width: screen.width, height: screen.height }}
+        />
         <ScrollView>
           <Text
             style={{

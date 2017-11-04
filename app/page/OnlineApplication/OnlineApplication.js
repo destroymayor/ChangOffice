@@ -44,16 +44,6 @@ export default class OnlineApplication extends Component {
             )}
           />
           <Btn
-            ImageSource={require("../../image/btn/OnlineApplication/o3.png")}
-            ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "地政電子資料流通服務網",
-              "http://ccs.land.moi.gov.tw/jsp/HomePageController"
-            )}
-          />
-          <Btn
             ImageSource={require("../../image/btn/OnlineApplication/o4.png")}
             ImageStyle={{ width: 180, height: 100 }}
             onPress={() => Linking.openURL("https://clir.land.moi.gov.tw/cap/?websn=474")}
@@ -65,7 +55,7 @@ export default class OnlineApplication extends Component {
               this,
               "WebPage",
               "測繪圖資整合資料查詢申購",
-              "http://eservice.nlsc.gov.tw/CaseApply/login.aspx"
+              "http://whgis.nlsc.gov.tw/Default.aspx"
             )}
           />
           <Btn

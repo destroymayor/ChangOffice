@@ -24,6 +24,11 @@ export default class QueryArea extends Component {
     }
   }
 
+  _Navigation(page) {
+    const { navigate } = this.props.navigation;
+    navigate(page);
+  }
+
   render() {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/queryarea.png")}>
@@ -31,12 +36,7 @@ export default class QueryArea extends Component {
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q1.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "案件辦理情形",
-              "http://land-app2.chcg.gov.tw/query/casedo.jsp?menu=true&type=R"
-            )}
+            onPress={this._Navigation.bind(this, "CaseHandlingImagePage")}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q2.png")}
@@ -85,7 +85,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "公告土地現值",
-              "http://www.land.chcg.gov.tw/qlandprice/landprice.asp?id=561"
+              "http://land-app2.chcg.gov.tw/query/valueprice.jsp?menu=true"
             )}
           />
           <Btn
@@ -110,7 +110,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "不動產交易資訊",
-              "https://pip.moi.gov.tw/V2/Default.aspx"
+              "https://pip.moi.gov.tw/WGB/web_page/WGB010100.aspx"
             )}
           />
           <Btn
@@ -120,7 +120,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "地籍圖資便民系統",
-              "http://easymap.land.moi.gov.tw/R02/Index"
+              "http://easymap.land.moi.gov.tw/P02/Index"
             )}
           />
         </ScrollView>

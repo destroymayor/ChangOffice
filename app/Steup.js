@@ -90,6 +90,10 @@ const Steup = StackNavigator(
       screen: page.QueryArea,
       navigationOptions: { title: "查詢專區" }
     },
+    CaseHandlingImagePage: {
+      screen: page.CaseHandlingImagePage,
+      navigationOptions: { title: "案件辦理情形" }
+    },
     //--------------------------------------//
     //下載專區
     Downloads: {
@@ -172,8 +176,8 @@ const Steup = StackNavigator(
 const navigateOnce = getStateForAction => (action, state) => {
   const { type, routeName } = action;
   return state &&
-  type === NavigationActions.NAVIGATE &&
-  routeName === state.routes[state.routes.length - 1].routeName
+    type === NavigationActions.NAVIGATE &&
+    routeName === state.routes[state.routes.length - 1].routeName
     ? null
     : getStateForAction(action, state);
 };

@@ -44,7 +44,7 @@ export default class Dowunloads extends Component {
             this,
             "WebPage",
             "本所為民服務手冊",
-            "http://www.xh-land.gov.tw/chaspx/download.aspx?web=89"
+            "http://www.xh-land.gov.tw/?Page=Files&Guid=a69b105b-2cb9-6053-169c-bca1514d335e"
           )}
         />
         <Btn

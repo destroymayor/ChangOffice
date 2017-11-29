@@ -55,7 +55,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "應附證件來源機關",
-              "http://www.xh-land.gov.tw/chaspx/content.aspx?web=184"
+              "http://www.xh-land.gov.tw/?Guid=c571073c-d796-32b7-14fa-5e05ab2755b9"
             )}
           />
           <Btn

@@ -6,7 +6,7 @@
 
 //檔案應用
 import React, { Component } from "react";
-import { StyleSheet, Image, Linking, Text, View } from "react-native";
+import { StyleSheet, Image, Platform, Linking, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 import screen from "../../Style/screen";
@@ -15,6 +15,18 @@ export default class FileApplication extends Component {
   _NavigationBtn(page) {
     const { navigate } = this.props.navigation;
     navigate(page);
+  }
+
+  _NavigationBtn(page, PageName, PageUrl) {
+    const { navigate } = this.props.navigation;
+    if (Platform.OS === "android") {
+      navigate(page, {
+        PageName: PageName,
+        PageUrl: PageUrl
+      });
+    } else {
+      Linking.openURL(PageUrl);
+    }
   }
 
   render() {
@@ -35,7 +47,12 @@ export default class FileApplication extends Component {
         <Btn
           ImageSource={require("../../image/btn/FileApplication/f3.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(this, "Applicationandexample")}
+          onPress={this._NavigationBtn.bind(
+            this,
+            "WebPage",
+            "申請書及範例",
+            "http://www.xh-land.gov.tw/?Page=Files&Guid=c2409bd6-ec2b-fc19-1604-3d25c2b66d6e"
+          )}
         />
         <Btn
           ImageSource={require("../../image/btn/FileApplication/f4.png")}

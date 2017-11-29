@@ -23,7 +23,11 @@ export default class PricingLogin extends Component {
         <Btn
           ImageSource={require("../../image/btn/PricingLogin/pr1.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(this, "DeclarationBook")}
+          onPress={() => {
+            Linking.openURL(
+              "http://www.xh-land.gov.tw/?Page=Files&Guid=60ec2e47-e7bc-27fb-913b-9a4da7c0712a"
+            );
+          }}
         />
         <Btn
           ImageSource={require("../../image/btn/PricingLogin/pr2.png")}

@@ -6,7 +6,7 @@
 
 //公告專區
 import React, { Component } from "react";
-import { Platform, ScrollView, StyleSheet, Image, Text, View } from "react-native";
+import { Platform, ScrollView, StyleSheet, Linking, Image, Text, View } from "react-native";
 
 import Btn from "../../utils/Button";
 import screen from "../../Style/screen";
@@ -36,7 +36,12 @@ export default class Proclamation extends Component {
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p1.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "BooklikeSupply")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "書狀補給",
+              "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=7a699628-28d7-efd2-ab4e-8680132978f4"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p2.png")}
@@ -46,12 +51,22 @@ export default class Proclamation extends Component {
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p3.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "ConstructionFirstRegistration")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "建物第一次登記",
+              "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=c7756f27-ed53-3054-04bf-542ad2e48e89"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p4.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "NotInherited")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "未辦繼承",
+              "http://www.xh-land.gov.tw/?Page=Files&Guid=0662f34a-8a6b-ae8e-8a5f-7a72b1957ee2"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p5.png")}

@@ -36,17 +36,17 @@ export default class QueryArea extends Component {
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q1.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._Navigation.bind(this, "CaseHandlingImagePage")}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "案件辦理情形",
+              "http://www.xh-land.gov.tw/?Guid=2b3e9cf9-7e96-7076-2a02-3f80147b0416"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q2.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "案件辦理期限",
-              "http://www.xh-land.gov.tw/chaspx/service2.aspx?web=182"
-            )}
+            onPress={this._Navigation.bind(this, "CaseHandlingImagePage")}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q3.png")}
@@ -71,12 +71,7 @@ export default class QueryArea extends Component {
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q5.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "地政規費收費標準",
-              "http://www.xh-land.gov.tw/chaspx/menulist.aspx?web=186"
-            )}
+            onPress={this._Navigation.bind(this, "LandCharges")}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q6.png")}
@@ -101,7 +96,12 @@ export default class QueryArea extends Component {
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q9.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "都市土地使用分區", "http://luz.tcd.gov.tw/WEB/")}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "都市土地使用分區",
+              "http://luz.tcd.gov.tw/WEB/"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q10.png")}

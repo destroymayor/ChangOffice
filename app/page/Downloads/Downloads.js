@@ -24,18 +24,18 @@ export default class Dowunloads extends Component {
     }
   }
 
+  _Navigation(page) {
+    const { navigate } = this.props.navigation;
+    navigate(page);
+  }
+
   render() {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/downloads.png")}>
         <Btn
           ImageSource={require("../../image/btn/Downloads/d1.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "申請須知及書表",
-            "http://www.xh-land.gov.tw/chaspx/download3.aspx?web=97"
-          )}
+          onPress={this._Navigation.bind(this, "ApplicationNote")}
         />
         <Btn
           ImageSource={require("../../image/btn/Downloads/d3.png")}
@@ -44,7 +44,7 @@ export default class Dowunloads extends Component {
             this,
             "WebPage",
             "本所為民服務手冊",
-            "http://www.xh-land.gov.tw/?Page=Files&Guid=a69b105b-2cb9-6053-169c-bca1514d335e"
+            "http://www.xh-land.gov.tw/?Page=Files&Guid=93b16f68-6d77-e488-8478-a389374d7351&Colum=&OrderBy=&fit_guid=&keyword=%E5%BD%B0%E5%8C%96%E7%B8%A3%E6%BA%AA%E6%B9%96%E5%9C%B0%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80%E7%82%BA%E6%B0%91%E6%9C%8D%E5%8B%99%E6%89%8B%E5%86%8A"
           )}
         />
         <Btn

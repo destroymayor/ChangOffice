@@ -94,11 +94,22 @@ const Steup = StackNavigator(
       screen: page.CaseHandlingImagePage,
       navigationOptions: { title: "案件辦理情形" }
     },
+    LandCharges: {
+      screen: page.LandCharges,
+      navigationOptions: { title: "地政規費收費標準" }
+    },
+    LandChargesPage: {
+      screen: page.LandChargesPage
+    },
     //--------------------------------------//
     //下載專區
     Downloads: {
       screen: page.Downloads,
       navigationOptions: { title: "下載專區" }
+    },
+    ApplicationNote: {
+      screen: page.ApplicationNote,
+      navigationOptions: { title: "申請須知及書表" }
     },
     //--------------------------------------//
     //試算專區
@@ -142,7 +153,7 @@ const Steup = StackNavigator(
     },
     DeclarationBook: {
       screen: page.DeclarationBook,
-      navigationOptions: { title: "申報書下載" }
+      navigationOptions: { title: "書表下載" }
     },
     //--------------------------------------//
     //相關連結

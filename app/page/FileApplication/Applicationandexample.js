@@ -19,21 +19,21 @@ export default class Applicationandexample extends Component {
         {
           Line: "01",
           Title: "檔案應用申請書",
-          File1Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=2",
+          File1Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=6d5d3708-03bb-5171-3da5-5a4963e06284",
           click1: "296",
-          File2Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=3",
+          File2Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=8023a992-6274-655d-e6f4-5dcfa911b1db",
           click2: "240",
-          File3Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=4",
+          File3Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=6f2c354c-86b6-4196-eda0-3e1dbacdbdb0",
           click3: "70"
         },
         {
           Line: "02",
           Title: "檔案應用申請書-填寫範例",
-          File1Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=2",
+          File1Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e4524f87-aa1b-7daa-73eb-6987765e5be3",
           click1: "299",
-          File2Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=3",
+          File2Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e21163e4-9ff3-1087-a433-1616c31c7f1e",
           click2: "325",
-          File3Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=221&id=833&f=4",
+          File3Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=885c3e5f-0221-bff6-3edc-4a2c02483025",
           click3: "65"
         }
       ]

@@ -33,7 +33,7 @@ export default class FloorPresentation extends Component {
               height: screen.height / 2,
               marginBottom: 20
             }}
-            source={require("../../image/floorpresen1.png")}
+            source={require("../../image/floorpresen_1.png")}
           />
           <Text
             style={{

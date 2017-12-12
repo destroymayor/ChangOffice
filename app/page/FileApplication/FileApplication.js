@@ -17,7 +17,7 @@ export default class FileApplication extends Component {
     navigate(page);
   }
 
-  _NavigationBtn(page, PageName, PageUrl) {
+  _NavigationBtnWeb(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
     if (Platform.OS === "android") {
       navigate(page, {
@@ -36,7 +36,9 @@ export default class FileApplication extends Component {
           ImageSource={require("../../image/btn/FileApplication/f1.png")}
           ImageStyle={{ width: 180, height: 90 }}
           onPress={() => {
-            Linking.openURL("http://www.xh-land.gov.tw/chaspx/Apply.aspx?web=59");
+            Linking.openURL(
+              "http://www.xh-land.bexweb.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44"
+            );
           }}
         />
         <Btn
@@ -47,12 +49,7 @@ export default class FileApplication extends Component {
         <Btn
           ImageSource={require("../../image/btn/FileApplication/f3.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "申請書及範例",
-            "http://www.xh-land.gov.tw/?Page=Files&Guid=c2409bd6-ec2b-fc19-1604-3d25c2b66d6e"
-          )}
+          onPress={this._NavigationBtn.bind(this, "Applicationandexample")}
         />
         <Btn
           ImageSource={require("../../image/btn/FileApplication/f4.png")}

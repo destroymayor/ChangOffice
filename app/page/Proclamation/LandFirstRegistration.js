@@ -13,7 +13,7 @@ import screen from "../../Style/screen";
 export default class LandFirstRegistration extends Component {
   render() {
     return (
-      <Image style={styles.container} source={require("../../image/backgrounds/onlineapplication.png")}>
+      <Image style={styles.container} source={require("../../image/backgrounds/proclamation.png")}>
         <Text style={{ color: "#fff", fontSize: 20 }}>暫無資料</Text>
       </Image>
     );

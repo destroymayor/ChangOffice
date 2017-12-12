@@ -13,7 +13,7 @@ export default class OfficeHours extends Component {
   render() {
     return (
       <ScrollView>
-        <Image style={styles.container} source={require("../../image/backgrounds/introduction_time.png")} />
+        <Image style={styles.container} source={require("../../image/backgrounds/introductionTime.png")} />
       </ScrollView>
     );
   }

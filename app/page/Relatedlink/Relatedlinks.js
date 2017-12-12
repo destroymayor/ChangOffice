@@ -66,13 +66,19 @@ export default class Relatedlink extends Component {
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r7.png")}
             ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣地方稅務局", "http://www.changtax.gov.tw/")}
+            onPress={this._NavigationBtn.bind(
+              this,
+              "WebPage",
+              "彰化縣地方稅務局",
+              "http://www.changtax.gov.tw/"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Relatedlink/r8.png")}
             ImageStyle={{ width: 180, height: 90 }}
             onPress={() =>
-              Linking.openURL("https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543")}
+              Linking.openURL("https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543")
+            }
           />
         </ScrollView>
       </Image>

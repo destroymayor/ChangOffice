@@ -34,7 +34,7 @@ export default class Area extends Component {
             this,
             "WebPage",
             "溪湖鎮戶政",
-            "http://house.chcg.gov.tw/xihu/00home/index1.asp"
+            "http://town.chcg.gov.tw/xihu/00home/index7.asp"
           )}
         />
         <Btn
@@ -44,7 +44,7 @@ export default class Area extends Component {
             this,
             "WebPage",
             "埔心鄉戶政",
-            "http://house.chcg.gov.tw/pusin/00home/index1.asp"
+            "http://town.chcg.gov.tw/puxin/00home/index7.asp"
           )}
         />
         <Btn
@@ -54,7 +54,7 @@ export default class Area extends Component {
             this,
             "WebPage",
             "埔鹽鄉戶政",
-            "http://house.chcg.gov.tw/puyan/00home/index1.asp"
+            "http://www.puyan.gov.tw/index.aspx"
           )}
         />
       </Image>

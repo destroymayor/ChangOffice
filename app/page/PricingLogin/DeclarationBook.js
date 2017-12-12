@@ -18,7 +18,7 @@ export default class DeclarationBook extends Component {
       exampledata: [
         {
           Line: "01",
-          Title: "不動產成交案件實際資訊申報書",
+          Title: "書表下載",
           File1Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=235&id=1049&f=2",
           click1: "193",
           File2Url: "http://www.xh-land.gov.tw/chaspx/MfileClick.aspx?web=235&id=1049&f=3",

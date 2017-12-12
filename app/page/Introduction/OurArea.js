@@ -20,8 +20,13 @@ export default class QurArea extends Component {
       <Image style={styles.container} source={require("../../image/backgrounds/introduction.png")}>
         <Image
           resizeMode={Image.resizeMode.contain}
-          style={{ width: screen.width, height: screen.height, marginBottom: 50 }}
-          source={require("../../image/mess.png")}
+          style={{ width: screen.width, height: "50%" }}
+          source={require("../../image/mess0.png")}
+        />
+        <Image
+          resizeMode={Image.resizeMode.contain}
+          style={{ width: screen.width, height: "50%" }}
+          source={require("../../image/mess1.png")}
         />
       </Image>
     );
@@ -33,6 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: screen.width,
     height: screen.height,
-    justifyContent: "center"
+    justifyContent: "center",
+    alignItems: "center"
   }
 });

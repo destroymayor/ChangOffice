@@ -33,10 +33,12 @@ import CadastralCleaning from "./Proclamation/CadastralCleaning";
 //查詢專區
 import QueryArea from "./QueryArea/QueryArea";
 import CaseHandlingImagePage from "./QueryArea/CaseHandlingImagePage ";
-
+import LandCharges from "./QueryArea/LandCharges";
+import LandChargesPage from "./QueryArea/LandChargesPage";
 //-----------------------//
 //下載專區
 import Downloads from "./Downloads/Downloads";
+import ApplicationNote from "./Downloads/ApplicationNotes";
 //-----------------------//
 //試算專區
 import TrialCalculation from "./TrialCalculation/TrialCalculation";
@@ -61,7 +63,7 @@ import Relatedlink from "./Relatedlink/Relatedlinks";
 import RelatedlinkArea from "./Relatedlink/page/Area";
 import RelatedlinkChanghua from "./Relatedlink/page/Changhua";
 import RelatedlinkGovernment from "./Relatedlink/page/Government";
-import RelatedlinkAreaInsiders from "./Relatedlink/page/Government";
+import RelatedlinkAreaInsiders from "./Relatedlink/page/AreaInsider";
 
 export default {
   Introduction: Introduction,
@@ -83,7 +85,12 @@ export default {
   //-------------------------//
   QueryArea: QueryArea,
   CaseHandlingImagePage: CaseHandlingImagePage,
+  LandCharges: LandCharges,
+  LandChargesPage: LandChargesPage,
+  //////
   Downloads: Downloads,
+  ApplicationNote: ApplicationNote,
+  ///////
   TrialCalculation: TrialCalculation,
   OnlineApplication: OnlineApplication,
   FileApplication: FileApplication,

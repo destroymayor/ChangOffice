@@ -12,7 +12,7 @@ import Btn from "../../utils/Button";
 import screen from "../../Style/screen";
 
 export default class PricingLogin extends Component {
-  _NavigationBtn(page, PageName, PageUrl) {
+  _NavigationBtnWeb(page, PageName, PageUrl) {
     const { navigate } = this.props.navigation;
     if (Platform.OS === "android") {
       navigate(page, {
@@ -32,8 +32,8 @@ export default class PricingLogin extends Component {
   _Button = (text, onPress) => (
     <TouchableOpacity
       style={{
-        width: 180,
-        height: 50,
+        width: 210,
+        height: 55,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "rgb(64,124,118)",
@@ -46,7 +46,7 @@ export default class PricingLogin extends Component {
       <Text
         style={{
           textAlign: "center",
-          fontSize: 18,
+          fontSize: 16,
           color: "#fff"
         }}
       >
@@ -62,7 +62,7 @@ export default class PricingLogin extends Component {
           <View
             style={{
               flex: 1,
-              justifyContent: "center",
+              marginTop: 20,
               alignItems: "center",
               width: screen.width,
               height: screen.height
@@ -71,28 +71,28 @@ export default class PricingLogin extends Component {
             {this._Button("案件類型", () =>
               Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84")
             )}
-            {this._Button("申報流程", () =>
+            {this._Button("申報方式", () =>
               Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84&MyN=2")
             )}
-            <Btn
-              ImageSource={require("../../image/btn/PricingLogin/pr1.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={this._NavigationBtn.bind(this, "DeclarationBook")}
-            />
-            <Btn
-              ImageSource={require("../../image/btn/PricingLogin/pr2.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={() => {
-                Linking.openURL("https://clir.land.moi.gov.tw/cap/");
-              }}
-            />
-            <Btn
-              ImageSource={require("../../image/btn/PricingLogin/pr3.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={() => {
-                Linking.openURL("http://lvr.land.moi.gov.tw/homePage.action");
-              }}
-            />
+            {this._Button("書表下載", this._NavigationBtn.bind(this, "DeclarationBook"))}
+            {this._Button(
+              "實價登錄申報網",
+              this._NavigationBtnWeb.bind(
+                this,
+                "WebPage",
+                "實價登錄申報網",
+                "https://clir.land.moi.gov.tw/cap/"
+              )
+            )}
+            {this._Button(
+              "不動產交易實價查詢網",
+              this._NavigationBtnWeb.bind(
+                this,
+                "WebPage",
+                "不動產交易實價查詢網",
+                "http://lvr.land.moi.gov.tw/homePage.action"
+              )
+            )}
           </View>
         </ScrollView>
       </Image>

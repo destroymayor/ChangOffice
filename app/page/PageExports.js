@@ -20,8 +20,6 @@ import latestNews from "./Introduction/latestNews";
 import Proclamation from "./Proclamation/Proclamation";
 //書狀補給
 import BooklikeSupply from "./Proclamation/BooklikeSupply";
-//土地第一次登記
-import LandFirstRegistration from "./Proclamation/LandFirstRegistration";
 //建物第一次登記
 import ConstructionFirstRegistration from "./Proclamation/ConstructionFirstRegistration";
 //未辦繼承
@@ -78,7 +76,6 @@ export default {
   //-------------------------//
   Proclamation: Proclamation,
   BooklikeSupply: BooklikeSupply,
-  LandFirstRegistration: LandFirstRegistration,
   ConstructionFirstRegistration: ConstructionFirstRegistration,
   NotInherited: NotInherited,
   CadastralCleaning: CadastralCleaning,

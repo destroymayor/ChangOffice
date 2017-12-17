@@ -64,11 +64,6 @@ const Steup = StackNavigator(
       screen: page.BooklikeSupply,
       navigationOptions: { title: "書狀補給" }
     },
-    //土地第一次登記
-    LandFirstRegistration: {
-      screen: page.LandFirstRegistration,
-      navigationOptions: { title: "土地第一次登記" }
-    },
     //建物第一次登記
     ConstructionFirstRegistration: {
       screen: page.ConstructionFirstRegistration,

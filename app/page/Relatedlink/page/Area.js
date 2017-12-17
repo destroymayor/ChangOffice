@@ -33,7 +33,7 @@ export default class Area extends Component {
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "溪湖鎮戶政",
+            "溪湖鎮公所",
             "http://town.chcg.gov.tw/xihu/00home/index7.asp"
           )}
         />
@@ -43,7 +43,7 @@ export default class Area extends Component {
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "埔心鄉戶政",
+            "埔心鄉公所",
             "http://town.chcg.gov.tw/puxin/00home/index7.asp"
           )}
         />
@@ -53,7 +53,7 @@ export default class Area extends Component {
           onPress={this._NavigationBtn.bind(
             this,
             "WebPage",
-            "埔鹽鄉戶政",
+            "埔鹽鄉公所",
             "http://www.puyan.gov.tw/index.aspx"
           )}
         />

@@ -39,7 +39,7 @@ export default class QueryArea extends Component {
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
-              "案件辦理情形",
+              "案件辦理期限",
               "http://www.xh-land.gov.tw/?Guid=2b3e9cf9-7e96-7076-2a02-3f80147b0416"
             )}
           />

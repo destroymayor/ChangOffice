@@ -48,50 +48,47 @@ export default class TrialCalculation extends Component {
           <View
             style={{
               flex: 1,
-              justifyContent: "center",
               alignItems: "center",
               width: screen.width,
               height: screen.height
             }}
           >
-            <Btn
-              ImageSource={require("../../image/btn/TrialCalculation/t1.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={() => {
-                Linking.openURL("https://www.etax.nat.gov.tw/etwmain/front/ETW158W9");
-              }}
-            />
-            <Btn
-              ImageSource={require("../../image/btn/TrialCalculation/t2.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={this._NavigationBtn.bind(
+            {this._Button(
+              "土地增值稅",
+              this._NavigationBtn.bind(
+                this,
+                "WebPage",
+                "土地增值稅",
+                "https://www.etax.nat.gov.tw/etwmain/front/ETW158W9"
+              )
+            )}
+            {this._Button(
+              "契稅",
+              this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "契稅",
                 "https://www.etax.nat.gov.tw/etwmain/web/ETW158W11"
-              )}
-            />
-            <Btn
-              ImageSource={require("../../image/btn/TrialCalculation/t3.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={this._NavigationBtn.bind(
+              )
+            )}
+            {this._Button(
+              "贈與稅",
+              this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "贈與稅",
                 "https://www.etax.nat.gov.tw/etwmain/front/ETW158W7"
-              )}
-            />
-            <Btn
-              ImageSource={require("../../image/btn/TrialCalculation/t4.png")}
-              ImageStyle={{ width: 180, height: 90 }}
-              onPress={this._NavigationBtn.bind(
+              )
+            )}
+            {this._Button(
+              "遺產稅",
+              this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "遺產稅",
                 "https://www.etax.nat.gov.tw/etwmain/front/ETW158W6"
-              )}
-            />
-
+              )
+            )}
             {this._Button(
               "貸款",
               this._NavigationBtn.bind(this, "WebPage", "貸款", "http://rate.bot.com.tw/trial/t05")

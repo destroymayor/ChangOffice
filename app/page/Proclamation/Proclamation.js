@@ -46,7 +46,12 @@ export default class Proclamation extends Component {
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p2.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(this, "LandFirstRegistration")}
+            onPress={this._NavigationBtnWeb.bind(
+              this,
+              "WebPage",
+              "土地第一次登記",
+              "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=64b9f47d-d903-4ec6-840f-e5aeee63fc78"
+            )}
           />
           <Btn
             ImageSource={require("../../image/btn/Proclamation/p3.png")}

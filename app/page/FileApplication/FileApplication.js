@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: screen.width,
-    height: screen.height,
-    justifyContent: "center"
+    height: screen.height
   }
 });

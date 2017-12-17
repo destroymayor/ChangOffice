@@ -38,7 +38,7 @@ export default class OnlineApplication extends Component {
       }}
       onPress={onPress}
     >
-      <Text style={{ fontSize: 17, color: "#fff" }}>{text}</Text>
+      <Text style={{ fontSize: 16, color: "#fff" }}>{text}</Text>
     </TouchableOpacity>
   );
 

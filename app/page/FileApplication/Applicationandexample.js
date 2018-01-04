@@ -26,8 +26,8 @@ export default class Applicationandexample extends Component {
         {
           Line: "02",
           Title: "檔案應用申請書-填寫範例",
-          File1Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e4524f87-aa1b-7daa-73eb-6987765e5be3",
-          File2Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e21163e4-9ff3-1087-a433-1616c31c7f1e",
+          File1Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e21163e4-9ff3-1087-a433-1616c31c7f1e",
+          File2Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e4524f87-aa1b-7daa-73eb-6987765e5be3",
           File3Url: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=885c3e5f-0221-bff6-3edc-4a2c02483025"
         }
       ]

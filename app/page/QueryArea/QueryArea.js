@@ -39,7 +39,7 @@ export default class QueryArea extends Component {
             onPress={this._NavigationBtn.bind(
               this,
               "WebPage",
-              "案件辦理期限",
+              "案件辦理情形",
               "http://www.xh-land.gov.tw/?Guid=2b3e9cf9-7e96-7076-2a02-3f80147b0416"
             )}
           />
@@ -76,12 +76,9 @@ export default class QueryArea extends Component {
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q6.png")}
             ImageStyle={{ width: 180, height: 100 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "公告土地現值",
-              "http://land-app2.chcg.gov.tw/query/valueprice.jsp?menu=true"
-            )}
+            onPress={() => {
+              Linking.openURL("http://land-app2.chcg.gov.tw/query/valueprice.jsp?menu=true");
+            }}
           />
           <Btn
             ImageSource={require("../../image/btn/QueryArea/q8.png")}

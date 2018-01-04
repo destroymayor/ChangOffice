@@ -70,7 +70,7 @@ export default class Relatedlink extends Component {
               this,
               "WebPage",
               "彰化縣地方稅務局",
-              "http://www.changtax.gov.tw/"
+              "https://www.changtax.gov.tw/Mobile/"
             )}
           />
           <Btn

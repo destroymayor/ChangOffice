@@ -87,7 +87,7 @@ const Steup = StackNavigator(
     },
     CaseHandlingImagePage: {
       screen: page.CaseHandlingImagePage,
-      navigationOptions: { title: "案件辦理情形" }
+      navigationOptions: { title: "案件辦理期限" }
     },
     LandCharges: {
       screen: page.LandCharges,

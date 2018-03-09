@@ -37,7 +37,7 @@ export default class FileApplication extends Component {
           ImageStyle={{ width: 180, height: 90 }}
           onPress={() => {
             Linking.openURL(
-              "http://www.xh-land.bexweb.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44"
+              "http://www.xh-land.gov.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44"
             );
           }}
         />

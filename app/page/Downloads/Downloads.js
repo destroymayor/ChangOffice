@@ -40,12 +40,11 @@ export default class Dowunloads extends Component {
         <Btn
           ImageSource={require("../../image/btn/Downloads/d3.png")}
           ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "本所為民服務手冊",
-            "http://www.xh-land.gov.tw/?Page=Files&Guid=93b16f68-6d77-e488-8478-a389374d7351&Colum=&OrderBy=&fit_guid=&keyword=%E5%BD%B0%E5%8C%96%E7%B8%A3%E6%BA%AA%E6%B9%96%E5%9C%B0%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80%E7%82%BA%E6%B0%91%E6%9C%8D%E5%8B%99%E6%89%8B%E5%86%8A"
-          )}
+          onPress={() => {
+            Linking.openURL(
+              "http://www.xh-land.gov.tw/?Page=Files&Guid=93b16f68-6d77-e488-8478-a389374d7351&Colum=&OrderBy=&fit_guid=&keyword=%E5%BD%B0%E5%8C%96%E7%B8%A3%E6%BA%AA%E6%B9%96%E5%9C%B0%E6%94%BF%E4%BA%8B%E5%8B%99%E6%89%80%E7%82%BA%E6%B0%91%E6%9C%8D%E5%8B%99%E6%89%8B%E5%86%8A"
+            );
+          }}
         />
         <Btn
           ImageSource={require("../../image/btn/Downloads/d4.png")}

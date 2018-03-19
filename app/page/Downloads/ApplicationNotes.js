@@ -53,69 +53,27 @@ export default class ApplicationNote extends Component {
               height: screen.height
             }}
           >
-            {this._Button(
-              "登記類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "登記類",
-                "http://www.xh-land.gov.tw/?Guid=88023c0a-1239-d42c-b9b2-6be2c15579f4"
-              )
-            )}
-            {this._Button(
-              "測量類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "測量類",
-                "http://www.xh-land.gov.tw/?Guid=5974b851-a3f8-95d0-dfbe-c7fffd245089"
-              )
-            )}
-            {this._Button(
-              "謄本類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "謄本類",
-                "http://www.xh-land.gov.tw/?Guid=610ffbb1-e86b-a592-9d5f-a09081128a22"
-              )
-            )}
-            {this._Button(
-              "地價類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "地價類",
-                "http://www.xh-land.gov.tw/?Guid=ad66791f-4b98-8c8e-5b48-cf0c9438b7bf"
-              )
-            )}
-            {this._Button(
-              "地用類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "地用類",
-                "http://www.xh-land.gov.tw/?Guid=fee0a635-d28a-185d-6fe1-f708631bf72e"
-              )
-            )}
-            {this._Button(
-              "檔案類",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "檔案類",
-                "http://www.xh-land.gov.tw/?Page=Files&Guid=c2409bd6-ec2b-fc19-1604-3d25c2b66d6e"
-              )
-            )}
-            {this._Button(
-              "其他",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "其他",
-                "http://www.xh-land.gov.tw/?Page=Files&Guid=d7275bd9-83ea-c435-cd8e-7ee77cd4a68b"
-              )
-            )}
+            {this._Button("登記類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Guid=88023c0a-1239-d42c-b9b2-6be2c15579f4");
+            })}
+            {this._Button("測量類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Guid=5974b851-a3f8-95d0-dfbe-c7fffd245089");
+            })}
+            {this._Button("謄本類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Guid=610ffbb1-e86b-a592-9d5f-a09081128a22");
+            })}
+            {this._Button("地價類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Guid=ad66791f-4b98-8c8e-5b48-cf0c9438b7bf");
+            })}
+            {this._Button("地用類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Guid=fee0a635-d28a-185d-6fe1-f708631bf72e");
+            })}
+            {this._Button("檔案類", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Page=Files&Guid=c2409bd6-ec2b-fc19-1604-3d25c2b66d6e");
+            })}
+            {this._Button("其他", () => {
+              Linking.openURL("http://www.xh-land.gov.tw/?Page=Files&Guid=d7275bd9-83ea-c435-cd8e-7ee77cd4a68b");
+            })}
           </View>
         </ScrollView>
       </Image>

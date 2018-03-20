@@ -56,12 +56,9 @@ export default class OnlineApplication extends Component {
             <Btn
               ImageSource={require("../../image/btn/OnlineApplication/o1.png")}
               ImageStyle={{ width: 180, height: 100 }}
-              onPress={this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "全國地政電子謄本系統",
-                "http://210.71.181.102/"
-              )}
+              onPress={() => {
+                Linking.openURL("http://210.71.181.102/");
+              }}
             />
             <Btn
               ImageSource={require("../../image/btn/OnlineApplication/o2.png")}
@@ -81,22 +78,12 @@ export default class OnlineApplication extends Component {
             <Btn
               ImageSource={require("../../image/btn/OnlineApplication/o5.png")}
               ImageStyle={{ width: 180, height: 100 }}
-              onPress={this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "測繪圖資整合資料查詢申購",
-                "http://whgis.nlsc.gov.tw/Default.aspx"
-              )}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "測繪圖資整合資料查詢申購", "http://whgis.nlsc.gov.tw/Default.aspx")}
             />
             <Btn
               ImageSource={require("../../image/btn/OnlineApplication/o6.png")}
               ImageStyle={{ width: 180, height: 100 }}
-              onPress={this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "Hinet地政服務",
-                "http://land.hinet.net/index.asp"
-              )}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
             />
             <Btn
               ImageSource={require("../../image/btn/OnlineApplication/o7.png")}
@@ -120,12 +107,7 @@ export default class OnlineApplication extends Component {
             />
             {this._Button(
               "EATM線上繳費",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "EATM線上繳費",
-                "https://sap.bot.com.tw/sap/sap1030s?MID=S00125"
-              )
+              this._NavigationBtn.bind(this, "WebPage", "EATM線上繳費", "https://sap.bot.com.tw/sap/sap1030s?MID=S00125")
             )}
             {this._Button(
               "檔案線上申請",

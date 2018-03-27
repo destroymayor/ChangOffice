@@ -39,6 +39,7 @@ export default class index extends Component {
         positionBottom_top: 30
       });
     }
+    console.log(screen.width, screen.height);
   }
 
   componentDidMount() {
@@ -71,11 +72,7 @@ export default class index extends Component {
 
   render() {
     return (
-      <Image
-        resizeMode={Image.resizeMode.stretch}
-        source={require("../app/image/backgrounds/Zback_01.png")}
-        style={styles.container}
-      >
+      <Image resizeMode={Image.resizeMode.stretch} source={require("../app/image/backgrounds/Zback_01.png")} style={styles.container}>
         <View style={{ flex: 1 }} />
         <View style={styles.containers}>
           {this.renderBtn(

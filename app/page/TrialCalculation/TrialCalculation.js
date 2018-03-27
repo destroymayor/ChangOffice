@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import { Platform, Linking, Image, StyleSheet, ScrollView, TouchableOpacity, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class TrialCalculation extends Component {
@@ -53,55 +53,42 @@ export default class TrialCalculation extends Component {
               height: screen.height
             }}
           >
-            {this._Button(
-              "土地增值稅",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "土地增值稅",
-                "https://www.etax.nat.gov.tw/etwmain/front/ETW158W9"
-              )
-            )}
-            {this._Button(
-              "契稅",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "契稅",
-                "https://www.etax.nat.gov.tw/etwmain/web/ETW158W11"
-              )
-            )}
-            {this._Button(
-              "贈與稅",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "贈與稅",
-                "https://www.etax.nat.gov.tw/etwmain/front/ETW158W7"
-              )
-            )}
-            {this._Button(
-              "遺產稅",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "遺產稅",
-                "https://www.etax.nat.gov.tw/etwmain/front/ETW158W6"
-              )
-            )}
-            {this._Button(
-              "貸款",
-              this._NavigationBtn.bind(this, "WebPage", "貸款", "http://rate.bot.com.tw/trial/t05")
-            )}
-            {this._Button(
-              "面積換算",
-              this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "面積換算",
-                "http://163.29.218.196/query/areachange.jsp?menu=true&type=P"
-              )
-            )}
+            <Btns
+              text={"土地增值稅"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "土地增值稅", "https://www.etax.nat.gov.tw/etwmain/front/ETW158W9")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
+            <Btns
+              text={"契稅"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "契稅", "https://www.etax.nat.gov.tw/etwmain/web/ETW158W11")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
+            <Btns
+              text={"贈與稅"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "贈與稅", "https://www.etax.nat.gov.tw/etwmain/front/ETW158W7")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
+            <Btns
+              text={"遺產稅"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "遺產稅", "https://www.etax.nat.gov.tw/etwmain/front/ETW158W6")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
+            <Btns
+              text={"貸款"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "貸款", "http://rate.bot.com.tw/trial/t05")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
+            <Btns
+              text={"面積換算"}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "面積換算", "http://163.29.218.196/query/areachange.jsp?menu=true&type=P")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(155,53,41)", marginTop: 20 }}
+            />
           </View>
         </ScrollView>
       </Image>

@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import { Platform, ScrollView, StyleSheet, Linking, Image, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class Proclamation extends Component {
@@ -33,52 +33,57 @@ export default class Proclamation extends Component {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/proclamation.png")}>
         <ScrollView>
-          <Btn
-            ImageSource={require("../../image/btn/Proclamation/p1.png")}
-            ImageStyle={{ width: 180, height: 100 }}
+          <Btns
+            text={"書狀補給"}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
               "書狀補給",
               "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=7a699628-28d7-efd2-ab4e-8680132978f4"
             )}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Proclamation/p2.png")}
-            ImageStyle={{ width: 180, height: 100 }}
+          <Btns
+            text={"土地第一次登記"}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
               "土地第一次登記",
               "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=64b9f47d-d903-4ec6-840f-e5aeee63fc78"
             )}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Proclamation/p3.png")}
-            ImageStyle={{ width: 180, height: 100 }}
+          <Btns
+            text={"建物第一次登記"}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
               "建物第一次登記",
               "http://www.xh-land.gov.tw/?Page=Bulletin&Guid=c7756f27-ed53-3054-04bf-542ad2e48e89"
             )}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Proclamation/p4.png")}
-            ImageStyle={{ width: 180, height: 100 }}
+          <Btns
+            text={"未辦繼承"}
             onPress={() => {
               Linking.openURL("http://www.xh-land.gov.tw/?Page=Files&Guid=0662f34a-8a6b-ae8e-8a5f-7a72b1957ee2");
             }}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Proclamation/p5.png")}
-            ImageStyle={{ width: 180, height: 100 }}
+          <Btns
+            text={"地籍清理"}
             onPress={this._NavigationBtnWeb.bind(
               this,
               "WebPage",
               "地籍清理",
               "http://land.chcg.gov.tw/07other/other01_list.asp?topsn=3526&cate_id=3559"
             )}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />
         </ScrollView>
       </Image>

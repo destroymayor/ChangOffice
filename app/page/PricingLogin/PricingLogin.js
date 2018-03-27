@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import { StyleSheet, ScrollView, Platform, Image, Linking, TouchableOpacity, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class PricingLogin extends Component {
@@ -68,31 +68,36 @@ export default class PricingLogin extends Component {
               height: screen.height
             }}
           >
-            {this._Button("案件類型", () =>
-              Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84")
-            )}
-            {this._Button("申報方式", () =>
-              Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84&MyN=2")
-            )}
-            {this._Button("書表下載", this._NavigationBtn.bind(this, "DeclarationBook"))}
-            {this._Button(
-              "實價登錄申報網",
-              this._NavigationBtnWeb.bind(
-                this,
-                "WebPage",
-                "實價登錄申報網",
-                "https://clir.land.moi.gov.tw/cap/"
-              )
-            )}
-            {this._Button(
-              "不動產交易實價查詢網",
-              this._NavigationBtnWeb.bind(
-                this,
-                "WebPage",
-                "不動產交易實價查詢網",
-                "http://lvr.land.moi.gov.tw/homePage.action"
-              )
-            )}
+            <Btns
+              text={"案件類型"}
+              onPress={() => Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(64,124,118)", marginTop: 20 }}
+            />
+            <Btns
+              text={"申報方式"}
+              onPress={() => Linking.openURL("http://www.xh-land.gov.tw/?Guid=a2100cfd-66b3-f11f-37a7-275306ea4c84&MyN=2")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(64,124,118)", marginTop: 20 }}
+            />
+            <Btns
+              text={"書表下載"}
+              onPress={this._NavigationBtn.bind(this, "DeclarationBook")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(64,124,118)", marginTop: 20 }}
+            />
+            <Btns
+              text={"實價登錄申報網"}
+              onPress={this._NavigationBtnWeb.bind(this, "WebPage", "實價登錄申報網", "https://clir.land.moi.gov.tw/cap/")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(64,124,118)", marginTop: 20 }}
+            />
+            <Btns
+              text={"不動產交易實價查詢網"}
+              onPress={this._NavigationBtnWeb.bind(this, "WebPage", "不動產交易實價查詢網", "http://lvr.land.moi.gov.tw/homePage.action")}
+              textSize={{ fontSize: 24 }}
+              styless={{ backgroundColor: "rgb(64,124,118)", marginTop: 20 }}
+            />
           </View>
         </ScrollView>
       </Image>

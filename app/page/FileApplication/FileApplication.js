@@ -9,7 +9,7 @@ import React, { Component } from "react";
 
 import { StyleSheet, Image, Platform, Linking, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class FileApplication extends Component {
@@ -33,32 +33,37 @@ export default class FileApplication extends Component {
   render() {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/fileapplication.png")}>
-        <Btn
-          ImageSource={require("../../image/btn/FileApplication/f1.png")}
-          ImageStyle={{ width: 180, height: 90 }}
+        <Btns
+          text={"檔案線上申請"}
           onPress={() => {
             Linking.openURL("http://www.xh-land.gov.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44");
           }}
+          textSize={{ fontSize: 24 }}
+          styless={{ backgroundColor: "rgb(168,47,51)", marginTop: 20 }}
         />
-        <Btn
-          ImageSource={require("../../image/btn/FileApplication/f2.png")}
-          ImageStyle={{ width: 180, height: 90 }}
+        <Btns
+          text={"檔案應用閱覽須知"}
           onPress={this._NavigationBtn.bind(this, "ArchivesApplicationNotes")}
+          textSize={{ fontSize: 24 }}
+          styless={{ backgroundColor: "rgb(168,47,51)", marginTop: 20 }}
         />
-        <Btn
-          ImageSource={require("../../image/btn/FileApplication/f3.png")}
-          ImageStyle={{ width: 180, height: 90 }}
+        <Btns
+          text={"申請書及範例"}
           onPress={this._NavigationBtn.bind(this, "Applicationandexample")}
+          textSize={{ fontSize: 24 }}
+          styless={{ backgroundColor: "rgb(168,47,51)", marginTop: 20 }}
         />
-        <Btn
-          ImageSource={require("../../image/btn/FileApplication/f4.png")}
-          ImageStyle={{ width: 180, height: 90 }}
+        <Btns
+          text={"作業流程圖"}
           onPress={this._NavigationBtn.bind(this, "JobflowChart")}
+          textSize={{ fontSize: 24 }}
+          styless={{ backgroundColor: "rgb(168,47,51)", marginTop: 20 }}
         />
-        <Btn
-          ImageSource={require("../../image/btn/FileApplication/f5.png")}
-          ImageStyle={{ width: 180, height: 90 }}
+        <Btns
+          text={"收費標準"}
           onPress={this._NavigationBtn.bind(this, "Charges")}
+          textSize={{ fontSize: 24 }}
+          styless={{ backgroundColor: "rgb(168,47,51)", marginTop: 20 }}
         />
       </Image>
     );

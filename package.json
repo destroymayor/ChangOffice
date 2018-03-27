@@ -17,6 +17,7 @@
     "react": "16.0.0-alpha.06",
     "react-native": "0.44.3",
     "react-native-code-push": "^2.0.3-beta",
+    "react-native-htmlview": "^0.12.1",
     "react-native-pdf-view": "^0.3.2",
     "react-native-splash-screen": "^2.1.0",
     "react-native-transformable-image": "^0.0.18",

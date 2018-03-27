@@ -6,9 +6,11 @@
 
 import React, { Component } from "react";
 import { StyleSheet, Text, View, WebView } from "react-native";
+import HTMLView from "react-native-htmlview";
 
 import BarClose from "./BarClose";
 import screen from "../Style/screen";
+import HtmlView from "react-native-htmlview";
 
 export default class WebViewPage extends Component {
   constructor(props) {
@@ -32,12 +34,15 @@ export default class WebViewPage extends Component {
 
   render() {
     const { params } = this.props.navigation.state;
-    console.log(params.PageUrl);
+    const ConnectionWe = `<h3><a href="tel:04-881-3119">點擊聯絡我們:04-881-3119</a></h3>`;
     return (
       <View style={styles.container}>
-        <Text style={{ fontSize: 18 }}>
-          {this.state.errorText}
-        </Text>
+        <Text style={{ fontSize: 18 }}>{this.state.errorText}</Text>
+        {params.PageName == "聯絡我們" ? (
+          <View style={{ height: 50 }}>
+            <HtmlView value={ConnectionWe} />
+          </View>
+        ) : null}
         <WebView
           enderLoagin={this.renderLoagin}
           style={{ width: screen.width - 10 }}

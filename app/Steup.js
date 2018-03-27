@@ -106,6 +106,9 @@ const Steup = StackNavigator(
       screen: page.ApplicationNote,
       navigationOptions: { title: "申請須知及書表" }
     },
+    ApplicationNoteList: {
+      screen: page.ApplicationNoteList
+    },
     //--------------------------------------//
     //試算專區
     TrialCalculation: {
@@ -181,9 +184,7 @@ const Steup = StackNavigator(
 
 const navigateOnce = getStateForAction => (action, state) => {
   const { type, routeName } = action;
-  return state &&
-    type === NavigationActions.NAVIGATE &&
-    routeName === state.routes[state.routes.length - 1].routeName
+  return state && type === NavigationActions.NAVIGATE && routeName === state.routes[state.routes.length - 1].routeName
     ? null
     : getStateForAction(action, state);
 };

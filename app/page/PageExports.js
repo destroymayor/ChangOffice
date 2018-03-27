@@ -37,6 +37,7 @@ import LandChargesPage from "./QueryArea/LandChargesPage";
 //下載專區
 import Downloads from "./Downloads/Downloads";
 import ApplicationNote from "./Downloads/ApplicationNotes";
+import ApplicationNoteList from "./Downloads/ApplicationNoteList";
 //-----------------------//
 //試算專區
 import TrialCalculation from "./TrialCalculation/TrialCalculation";
@@ -87,6 +88,7 @@ export default {
   //////
   Downloads: Downloads,
   ApplicationNote: ApplicationNote,
+  ApplicationNoteList: ApplicationNoteList,
   ///////
   TrialCalculation: TrialCalculation,
   OnlineApplication: OnlineApplication,

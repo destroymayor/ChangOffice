@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import { Platform, ScrollView, StyleSheet, Image, Linking, TouchableOpacity, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class OnlineApplication extends Component {
@@ -53,71 +53,82 @@ export default class OnlineApplication extends Component {
               alignItems: "center"
             }}
           >
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o1.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={"全國地政電子謄本系統"}
               onPress={() => {
                 Linking.openURL("http://210.71.181.102/");
               }}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o2.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`      彰化縣地政${"\n"}電傳資訊整合系統`}
               onPress={this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "彰化縣地政電傳資訊整合系統",
                 "http://pgo-chcgetw.land.nat.gov.tw/HE90_CHHG/chhg_2/plug_in/begin.cfm"
               )}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o4.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`     內政部地政司${"\n"}地政線上申辦系統`}
               onPress={() => Linking.openURL("https://clir.land.moi.gov.tw/cap/?websn=474")}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o5.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`      內政部國土測繪中心${"\n"}測繪圖資整合資料查詢申購`}
               onPress={this._NavigationBtn.bind(this, "WebPage", "測繪圖資整合資料查詢申購", "http://whgis.nlsc.gov.tw/Default.aspx")}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o6.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`Hinet地政服務`}
               onPress={this._NavigationBtn.bind(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o7.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`下班延時預約`}
               onPress={this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "下班延時預約",
                 "https://docs.google.com/forms/d/1IPE-FzmLOWuV3KuyyP6ldn3GsllaoAe6SRWfbwfqQV0/edit"
               )}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            <Btn
-              ImageSource={require("../../image/btn/OnlineApplication/o8.png")}
-              ImageStyle={{ width: 180, height: 100 }}
+            <Btns
+              text={`假日預約`}
               onPress={this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "假日預約",
                 "https://docs.google.com/forms/d/1cy-2UdiYiCzjy9e1e7m6c-tWWuEcGkOkwsuHlCn6KqU/edit"
               )}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
-            {this._Button(
-              "EATM線上繳費",
-              this._NavigationBtn.bind(this, "WebPage", "EATM線上繳費", "https://sap.bot.com.tw/sap/sap1030s?MID=S00125")
-            )}
-            {this._Button(
-              "檔案線上申請",
-              this._NavigationBtn.bind(
+            <Btns
+              text={`EATM線上繳費`}
+              onPress={this._NavigationBtn.bind(this, "WebPage", "EATM線上繳費", "https://sap.bot.com.tw/sap/sap1030s?MID=S00125")}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
+            />
+            <Btns
+              text={`檔案線上申請`}
+              onPress={this._NavigationBtn.bind(
                 this,
                 "WebPage",
                 "檔案線上申請",
                 "http://www.xh-land.gov.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44"
-              )
-            )}
+              )}
+              textSize={{ fontSize: 22 }}
+              styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
+            />
           </View>
         </ScrollView>
       </Image>

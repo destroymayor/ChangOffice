@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import { StyleSheet, ScrollView, Platform, Image, Linking, Text, View } from "react-native";
 
-import Btn from "../../utils/Button";
+import Btns from "../../utils/Btn";
 import screen from "../../Style/screen";
 
 export default class Relatedlink extends Component {
@@ -33,52 +33,53 @@ export default class Relatedlink extends Component {
     return (
       <Image style={styles.container} source={require("../../image/backgrounds/relatedlink.png")}>
         <ScrollView>
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r1.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"內政部地政司"}
             onPress={() => Linking.openURL("https://www.land.moi.gov.tw/pda/index.asp")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r2.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"彰化縣政府"}
             onPress={this._NavigationBtnPage.bind(this, "RelatedlinkGovernment")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r3.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"彰化縣各地政事務所"}
             onPress={this._NavigationBtnPage.bind(this, "RelatedlinkChanghua")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r4.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"轄區內公所"}
             onPress={this._NavigationBtnPage.bind(this, "RelatedlinkArea")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r5.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"轄區內戶政事務所"}
             onPress={this._NavigationBtnPage.bind(this, "RelatedlinkAreaInsiders")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r6.png")}
-            ImageStyle={{ width: 180, height: 90 }}
+          <Btns
+            text={"中區國稅局"}
             onPress={() => Linking.openURL("https://www.ntbca.gov.tw/etwmain/")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r7.png")}
-            ImageStyle={{ width: 180, height: 90 }}
-            onPress={this._NavigationBtn.bind(
-              this,
-              "WebPage",
-              "彰化縣地方稅務局",
-              "https://www.changtax.gov.tw/Mobile/"
-            )}
+          <Btns
+            text={"彰化縣地方稅務局"}
+            onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣地方稅務局", "https://www.changtax.gov.tw/Mobile/")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
-          <Btn
-            ImageSource={require("../../image/btn/Relatedlink/r8.png")}
-            ImageStyle={{ width: 180, height: 90 }}
-            onPress={() =>
-              Linking.openURL("https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543")
-            }
+          <Btns
+            text={"房地合一專區"}
+            onPress={() => Linking.openURL("https://www.ntbca.gov.tw/etwmain/front/ETW118W/CON/1936/8097788905194727543")}
+            textSize={{ fontSize: 24 }}
+            styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
         </ScrollView>
       </Image>

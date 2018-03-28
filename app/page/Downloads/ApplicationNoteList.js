@@ -74,7 +74,7 @@ export default class ApplicationNoteList extends Component {
             ImageSource={require("../../image/doc.png")}
             ImageStyle={{ width: 80, height: 80 }}
             onPress={() => {
-              Linking.openURL(item.File1DOC);
+              Linking.openURL(item.File3DOC);
             }}
           />
           <Btn
@@ -88,7 +88,7 @@ export default class ApplicationNoteList extends Component {
             ImageSource={require("../../image/odt.png")}
             ImageStyle={{ width: 80, height: 80 }}
             onPress={() => {
-              Linking.openURL(item.File3ODT);
+              Linking.openURL(item.FileODT);
             }}
           />
         </View>

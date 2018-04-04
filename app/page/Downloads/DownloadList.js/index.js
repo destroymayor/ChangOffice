@@ -1075,6 +1075,126 @@ module.exports = {
       FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=5e417a59-5bd4-ccf8-c90c-2b0e848cdfa8",
       File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=7de17896-fae2-ca40-c2e1-b485d29ffd48",
       File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=dd8bf447-489f-f698-9283-a200eb3ff6d5"
+    },
+    {
+      Title: "建物分割-建物測量及標示變更登記申請書填寫說明",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=cac3c14c-c297-a3d8-b2aa-0f2baa01c0c8",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=f4d8da13-abe7-e93a-2056-4569f45ae928",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e007d201-bf35-6ca1-4858-a2623a01f1e8"
+    },
+    {
+      Title: "建物分割-建物填寫範例_有標示變更",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=a95a02bb-b4e5-39eb-05f4-f7f226bee6cf",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=eb0af9f7-7894-4124-de23-741257ce96c9",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=0b697f10-d125-25f7-f134-c7768c55d528"
+    },
+    {
+      Title: "建物分割-建物填寫範例_無標示變更",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=753c6a0f-40d1-6e6c-0dbb-f71a2587cd76",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=7d3ea126-171b-c042-79f1-0fd4f79d445e",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=280300c9-c63e-86fb-a2c3-5af73d1d1f1c"
+    },
+    {
+      Title: "建物分割-建物測量及標示變更登記申請書",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=792acea6-db37-b642-88cf-793c907e05af",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=5711bede-5a3f-f0c0-3940-27d87b2d78e8",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e32b2ae7-0416-165b-8392-3e1eed24fd99"
+    },
+    {
+      Title: "建物合併-建物填寫範例_有標示變更",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=d359a394-3af5-5e90-b05a-96fe4f5f6cf7",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=a219a5b0-c637-abcb-f86e-f9e0d8c25b55",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=b499d7f4-70e3-618a-a9fb-c5fcdaef77ab"
+    },
+    {
+      Title: "建物合併-建物測量及標示變更登記申請書填寫說明",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=f5466053-7cb2-38bd-3944-a6b868526544",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=ae2fe1e8-a149-e418-6aa2-3b3affadf137",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=39b380e9-72dc-cf52-acf4-a1d820776f36"
+    },
+    {
+      Title: "建物合併-建物測量及標示變更登記申請書",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=766cc4f4-f1bc-33ef-b766-6487f434ef88",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=8b443066-0fed-6e36-a2b7-414ef016cc86",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=c500a243-a8fe-8392-0c93-be88c6c76ddb"
+    },
+    {
+      Title: "建物合併-建物填寫範例_無標示變更",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=dda8afb3-4642-69e4-d7dd-0a661b18ac66",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=09e199ef-b73b-f969-ed4a-d468e0738592",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=c1b9d7b8-9398-089e-1398-849466da6a4e"
+    },
+    {
+      Title: "建物基地號勘測-建物基地號勘測及登記申請填表說明	",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=ee8e0552-261b-1cbc-34ce-a0e2aaba4e33",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=240ea8de-c61a-f40c-e752-e3bfaa127a53",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=03b653eb-7f25-1f86-3975-df22963fdd5f"
+    },
+    {
+      Title: "建物基地號勘測-建物測量申請書-附表(涉及原有標示變更者還需填土地登記申請書)",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=3b413d52-fceb-6631-d25f-735a18b8f108",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=cfb05ba6-c3aa-fa02-1d6e-896c6f45bb45",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=a5a3c810-adf5-bf8e-0db2-98338a6ac519"
+    },
+    {
+      Title: "建物基地號勘測-建物測量申請書(涉及原有標示變更者還需填土地登記申請書)",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=dbb3bcb7-9b41-e610-88d7-6d6b3fdbf510",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=27550d5e-6bf1-1639-3179-a8b3332e1dc8",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=d88d0770-2ff3-ffeb-fa32-e7bf67ab24b3"
+    },
+    {
+      Title: "建物第一次測量-建物測量及標示變更登記申請書填寫說明",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=f6704031-2baf-f61a-40be-44cb8ecbd258",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=de710abe-4471-dbdf-1945-5da391473f00",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=1eeee066-1a25-9be3-18cb-0eade7954a8c"
+    },
+    {
+      Title: "建物第一次測量-建物測量及標示變更登記申請書",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=f5769819-94b5-f4d1-58c9-449bf8932796",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=4f8b7d31-df9e-675c-c6f4-877daec4903d",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=2cca956f-2e7f-5848-e32f-13a0273f72d7"
+    },
+    {
+      Title: "建物第一次測量-建物測量及標示變更登記申請書範例(涉及原有標示變更)",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=228df50e-5757-e510-d90e-b6fc3853881f",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=52aa6d4b-c7db-9b07-0104-cf1d5dc5de9d",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=dece98d0-1f14-df71-7924-c487c618060a"
+    },
+    {
+      Title: "建物第一次測量-建物測量申請書-附表",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=a37f8849-0b22-9b75-f1c0-1a17a16bb22c",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=34aaa5b0-64c3-12a4-607d-96a67fb22576",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=34df9d76-2f4a-918a-9343-27a7bea65078"
+    },
+    {
+      Title: "建物第一次測量-建物測量及標示變更登記申請書範例(未涉及原有標示變更)",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=b3810416-e382-ad6f-7fa8-a75c76480bb7",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=7d356c6a-fca5-7dae-9a1d-d15bd73960e0",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=0eafb417-47e8-e7ab-3a7c-77383d409179"
+    },
+    {
+      Title: "建物第一次測量-建物測量申請書",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=908fa253-25b0-81dc-afc8-0ac42759eb64",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e7611a6e-8a98-b835-713d-d9613c65a284",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=81b02ef4-394b-8b79-0f90-2051ecf41d36"
+    },
+    {
+      Title: "建物滅失-建物測量申請書-附表",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=7c94f5bc-4c63-f0c5-263e-025054fb0a8d",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=039c5701-a17c-c7e2-7d18-d612e04ba32c",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=394a45de-8176-16c7-0b85-25cadb1f439c"
+    },
+    {
+      Title: "建物滅失-建物滅失勘查及登記申請填表說明",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=522ee8b6-ca01-a592-a626-d2a02e5a4e9b",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=b83b6717-5331-9923-f635-973d1f9bf7c7",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=2bf7663e-29c0-b4dd-671a-d0d491c48f07"
+    },
+    {
+      Title: "建物滅失-建物測量申請書(涉及原有標示變更者還需填土地登記申請書)",
+      FileODT: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e0e5f9c2-d556-d31e-7226-08fba43e2137",
+      File2PDF: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=e3daa8af-4882-3ca4-96a1-b205bc84b433",
+      File3DOC: "http://www.xh-land.gov.tw/lib/GetFile.php?fil_guid=f6e13403-b042-6bf5-2308-367e0eb2d952"
     }
   ],
   List3: [

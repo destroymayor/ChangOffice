@@ -4,6 +4,8 @@ import Introduction from "./Introduction/Introduction";
 import QurArea from "./Introduction/OurArea";
 //位置交通
 import LocationTraffic from "./Introduction/LocationTraffic";
+//聯絡我們
+import ContactUs from "./Introduction/ContactUs";
 //辦公時間
 import OfficeHours from "./Introduction/OfficeHours";
 //各課業務
@@ -38,6 +40,7 @@ import LandChargesPage from "./QueryArea/LandChargesPage";
 import Downloads from "./Downloads/Downloads";
 import ApplicationNote from "./Downloads/ApplicationNotes";
 import ApplicationNoteList from "./Downloads/ApplicationNoteList";
+import ServiceManual from "./Downloads/ServiceManual";
 //-----------------------//
 //試算專區
 import TrialCalculation from "./TrialCalculation/TrialCalculation";
@@ -69,6 +72,7 @@ export default {
   QurArea: QurArea,
   LocationTraffic: LocationTraffic,
   OfficeHours: OfficeHours,
+  ContactUs: ContactUs,
   EachClassBusiness: EachClassBusiness,
   FloorPresentation: FloorPresentation,
   FBandYoutube: FBandYoutube,
@@ -89,6 +93,7 @@ export default {
   Downloads: Downloads,
   ApplicationNote: ApplicationNote,
   ApplicationNoteList: ApplicationNoteList,
+  ServiceManual: ServiceManual,
   ///////
   TrialCalculation: TrialCalculation,
   OnlineApplication: OnlineApplication,

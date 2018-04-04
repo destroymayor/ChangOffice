@@ -9,6 +9,7 @@ import React, { Component } from "react";
 import { Platform, Linking, Image, StyleSheet, Text, View } from "react-native";
 
 import Btn from "../../../utils/Button";
+import Btns from "../../../utils/Btn";
 import screen from "../../../Style/screen";
 
 export default class Government extends Component {
@@ -27,25 +28,17 @@ export default class Government extends Component {
   render() {
     return (
       <Image style={styles.container} source={require("../../../image/backgrounds/relatedlink.png")}>
-        <Btn
-          ImageSource={require("../../../image/btn/Relatedlink/btn/Government/g1.png")}
-          ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "彰化縣政府",
-            "http://www.chcg.gov.tw/ch/00home/home.asp"
-          )}
+        <Btns
+          styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 40 }}
+          text={"彰化縣政府"}
+          textSize={{ fontSize: 24 }}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣政府", "http://www.chcg.gov.tw/ch/00home/home.asp")}
         />
-        <Btn
-          ImageSource={require("../../../image/btn/Relatedlink/btn/Government/g2.png")}
-          ImageStyle={{ width: 180, height: 90 }}
-          onPress={this._NavigationBtn.bind(
-            this,
-            "WebPage",
-            "彰化縣政府地政處",
-            "http://land.chcg.gov.tw/00home/index6.asp"
-          )}
+        <Btns
+          styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 40 }}
+          text={"彰化縣政府地政處"}
+          textSize={{ fontSize: 24 }}
+          onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣政府地政處", "http://land.chcg.gov.tw/00home/index6.asp")}
         />
       </Image>
     );
@@ -56,7 +49,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: screen.width,
-    height: screen.height,
-    justifyContent: "center"
+    height: screen.height
   }
 });

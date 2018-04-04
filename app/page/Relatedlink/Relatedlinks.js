@@ -59,7 +59,7 @@ export default class Relatedlink extends Component {
           />
           <Btns
             text={"轄區內戶政事務所"}
-            onPress={this._NavigationBtnPage.bind(this, "RelatedlinkAreaInsiders")}
+            onPress={this._NavigationBtn.bind(this, "WebPage", "轄區內戶政事務所", "https://house.chcg.gov.tw/xihu/00home/index1.asp")}
             textSize={{ fontSize: 24 }}
             styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />
@@ -71,7 +71,7 @@ export default class Relatedlink extends Component {
           />
           <Btns
             text={"彰化縣地方稅務局"}
-            onPress={this._NavigationBtn.bind(this, "WebPage", "彰化縣地方稅務局", "https://www.changtax.gov.tw/Mobile/")}
+            onPress={() => Linking.openURL("https://www.changtax.gov.tw/Mobile/")}
             textSize={{ fontSize: 24 }}
             styless={{ backgroundColor: "rgb(68,121,143)", marginTop: 20 }}
           />

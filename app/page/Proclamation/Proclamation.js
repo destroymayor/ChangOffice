@@ -76,12 +76,9 @@ export default class Proclamation extends Component {
           />
           <Btns
             text={"地籍清理"}
-            onPress={this._NavigationBtnWeb.bind(
-              this,
-              "WebPage",
-              "地籍清理",
-              "http://land.chcg.gov.tw/07other/other01_list.asp?topsn=3526&cate_id=3559"
-            )}
+            onPress={() => {
+              Linking.openURL("http://land.chcg.gov.tw/07other/other01_list.asp?topsn=3526&cate_id=3559");
+            }}
             textSize={{ fontSize: 24 }}
             styless={{ backgroundColor: "rgb(103,153,78)", marginTop: 20 }}
           />

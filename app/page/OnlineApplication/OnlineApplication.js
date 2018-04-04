@@ -62,31 +62,26 @@ export default class OnlineApplication extends Component {
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
             <Btns
-              text={`      彰化縣地政${"\n"}電傳資訊整合系統`}
-              onPress={this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "彰化縣地政電傳資訊整合系統",
-                "http://pgo-chcgetw.land.nat.gov.tw/HE90_CHHG/chhg_2/plug_in/begin.cfm"
-              )}
+              text={`彰化縣地政電傳資訊`}
+              onPress={() => Linking.openURL("http://pgo-chcgetw.land.nat.gov.tw/HE90_CHHG/chhg_2/plug_in/begin.cfm")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
             <Btns
-              text={`     內政部地政司${"\n"}地政線上申辦系統`}
+              text={`地政司地政線上申辦系統`}
               onPress={() => Linking.openURL("https://clir.land.moi.gov.tw/cap/?websn=474")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
             <Btns
-              text={`      內政部國土測繪中心${"\n"}測繪圖資整合資料查詢申購`}
-              onPress={this._NavigationBtn.bind(this, "WebPage", "測繪圖資整合資料查詢申購", "http://whgis.nlsc.gov.tw/Default.aspx")}
+              text={`測繪圖資整合資料查詢申購`}
+              onPress={() => Linking.openURL("http://whgis.nlsc.gov.tw/Default.aspx")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
             <Btns
               text={`Hinet地政服務`}
-              onPress={this._NavigationBtn.bind(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
+              onPress={() => Linking.openURL(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
@@ -114,18 +109,13 @@ export default class OnlineApplication extends Component {
             />
             <Btns
               text={`EATM線上繳費`}
-              onPress={this._NavigationBtn.bind(this, "WebPage", "EATM線上繳費", "https://sap.bot.com.tw/sap/sap1030s?MID=S00125")}
+              onPress={() => Linking.openURL("https://sap.bot.com.tw/sap/sap1030s?MID=S00125")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
             <Btns
               text={`檔案線上申請`}
-              onPress={this._NavigationBtn.bind(
-                this,
-                "WebPage",
-                "檔案線上申請",
-                "http://www.xh-land.gov.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44"
-              )}
+              onPress={() => Linking.openURL("http://www.xh-land.gov.tw/?Page=ModifyFormBody&Guid=ddea0a59-bdfa-82c6-79f4-8a1168c64c44")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />

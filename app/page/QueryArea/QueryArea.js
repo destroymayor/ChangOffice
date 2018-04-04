@@ -40,7 +40,7 @@ export default class QueryArea extends Component {
               this,
               "WebPage",
               "案件辦理情形",
-              "http://www.xh-land.gov.tw/?Guid=2b3e9cf9-7e96-7076-2a02-3f80147b0416"
+              "http://land-app2.chcg.gov.tw/query/casedo.jsp?menu=true&type=R"
             )}
             textSize={{ fontSize: 24 }}
             styless={{ backgroundColor: "rgb(60,79,94)", marginTop: 20 }}

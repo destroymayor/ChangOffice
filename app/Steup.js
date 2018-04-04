@@ -29,6 +29,10 @@ const Steup = StackNavigator(
       screen: page.LocationTraffic,
       navigationOptions: { title: "位置交通" }
     },
+    ContactUs: {
+      screen: page.ContactUs,
+      navigationOptions: { title: "聯絡我們" }
+    },
     //辦公時間
     OfficeHours: {
       screen: page.OfficeHours,
@@ -108,6 +112,10 @@ const Steup = StackNavigator(
     },
     ApplicationNoteList: {
       screen: page.ApplicationNoteList
+    },
+    ServiceManual: {
+      screen: page.ServiceManual,
+      navigationOptions: { title: "為民服務手冊" }
     },
     //--------------------------------------//
     //試算專區

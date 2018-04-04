@@ -9,6 +9,7 @@ import React, { Component } from "react";
 import { Platform, Linking, Image, StyleSheet, ScrollView, TouchableOpacity, Text, View } from "react-native";
 
 import screen from "../../Style/screen";
+import Btns from "../../utils/Btn";
 
 export default class ApplicationNote extends Component {
   _NavigationBtn(PageName) {
@@ -19,20 +20,7 @@ export default class ApplicationNote extends Component {
   }
 
   _Button = (text, onPress) => (
-    <TouchableOpacity
-      style={{
-        width: 150,
-        height: 50,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "rgb(60,79,94)",
-        borderRadius: 5,
-        marginBottom: 30
-      }}
-      onPress={onPress}
-    >
-      <Text style={{ fontSize: 18, color: "#fff" }}>{text}</Text>
-    </TouchableOpacity>
+    <Btns text={text} onPress={onPress} textSize={{ fontSize: 24 }} styless={{ backgroundColor: "rgb(38,116,152)", marginTop: 20 }} />
   );
 
   render() {
@@ -42,7 +30,6 @@ export default class ApplicationNote extends Component {
           <View
             style={{
               flex: 1,
-              justifyContent: "center",
               alignItems: "center",
               width: screen.width,
               height: screen.height

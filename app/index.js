@@ -17,11 +17,11 @@ export default class index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      midwidth: 130,
-      midheight: 130,
+      midwidth: 150,
+      midheight: 150,
       midPositionTop: 0,
-      width: 80,
-      height: 80,
+      width: 100,
+      height: 100,
       position_top: 75,
       positionBottom_top: 5
     };
@@ -82,7 +82,7 @@ export default class index extends Component {
               {
                 width: this.state.width,
                 height: this.state.height,
-                marginTop: 15,
+                marginTop: 30,
                 position: "relative",
                 top: this.state.position_top,
                 left: 10
@@ -97,7 +97,7 @@ export default class index extends Component {
               {
                 width: this.state.width,
                 height: this.state.height,
-                marginTop: 10,
+                marginTop: 20,
                 position: "relative",
                 top: 0,
                 right: 5
@@ -112,7 +112,7 @@ export default class index extends Component {
               {
                 width: this.state.width,
                 height: this.state.height,
-                marginTop: 10,
+                marginTop: 20,
                 position: "relative",
                 top: 0,
                 left: 5
@@ -127,7 +127,7 @@ export default class index extends Component {
               {
                 width: this.state.width,
                 height: this.state.height,
-                marginTop: 10,
+                marginTop: 30,
                 position: "relative",
                 top: this.state.position_top,
                 right: 10
@@ -168,7 +168,7 @@ export default class index extends Component {
                 height: this.state.height,
                 marginTop: 10,
                 position: "relative",
-                bottom: 50,
+                bottom: 80,
                 left: 10
               }
             ],
@@ -213,7 +213,7 @@ export default class index extends Component {
                 height: this.state.height,
                 marginTop: 10,
                 position: "relative",
-                bottom: 50,
+                bottom: 80,
                 right: 10
               }
             ],

@@ -20,8 +20,8 @@ export default class index extends Component {
       midwidth: 150,
       midheight: 150,
       midPositionTop: 0,
-      width: 100,
-      height: 100,
+      width: 90,
+      height: 90,
       position_top: 75,
       positionBottom_top: 5
     };

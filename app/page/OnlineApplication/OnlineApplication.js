@@ -6,6 +6,7 @@
 
 //線上申辦
 import React, { Component } from "react";
+
 import { Platform, ScrollView, StyleSheet, Image, Linking, TouchableOpacity, Text, View } from "react-native";
 
 import Btns from "../../utils/Btn";
@@ -81,7 +82,7 @@ export default class OnlineApplication extends Component {
             />
             <Btns
               text={`Hinet地政服務`}
-              onPress={() => Linking.openURL(this, "WebPage", "Hinet地政服務", "http://land.hinet.net/index.asp")}
+              onPress={() => Linking.openURL("http://land.hinet.net/index.asp")}
               textSize={{ fontSize: 22 }}
               styless={{ backgroundColor: "rgb(18,95,118)", marginTop: 20 }}
             />
